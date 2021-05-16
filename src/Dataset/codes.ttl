@@ -1,0 +1,546 @@
+@prefix data: <https://github.com/repo#> .
+@prefix id: <https://github.com/akun#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+id:1 
+        data:title              "Android StepsView";
+        data:description        "A simple progress steps view on Android";
+        data:author             "Ahmad Hasyim";
+        data:url                "https://github.com/lordhasyim/semacam-kumpulan-repo";
+        .
+
+id:2 
+        data:title              "WhatsApp Profile Collapsing Toolbar";
+        data:description        "An Android custom animation view that looks like WhastApp Profile screen style";
+        data:author             "Anton Nurdin Tuhadiansyah";
+        data:url                "https://github.com/anton46/WhatsApp-ProfileCollapsingToolbar";
+        .
+
+id:3 
+        data:title              "Ziliun React Native";
+        data:description        "Ziliun article reader android app built with React Native";
+        data:author             "Sonny Lazuardi";
+        data:url                "https://github.com/sonnylazuardi/ziliun-react-native";
+        .
+
+id:4 
+        data:title              "React Tomato Timer";
+        data:description        "A simple timer for a more productive way to work and study built with ReactJS";
+        data:author             "Sonny Lazuardi";
+        data:url                "https://github.com/sonnylazuardi/react-tomato-timer";
+        .
+
+id:5 
+        data:title              "Compressor";
+        data:description        "An android image compression library";
+        data:author             "Zetra";
+        data:url                "https://github.com/zetbaitsu/Compressor";
+        .
+
+id:6 
+        data:title              "Rx Downloader";
+        data:description        "An Rx wrapper for Download Manager in Android";
+        data:author             "Esa Firman";
+        data:url                "https://github.com/esafirm/RxDownloader";
+        .
+
+id:7 
+        data:title              "Image Effect Filter";
+        data:description        "Android image filter processing sample using layer drawable and effect factory android";
+        data:author             "M. Nafian Wildana";
+        data:url                "https://github.com/mnafian/ImageEffectFilter";
+        .
+
+id:8 
+        data:title              "React Native Credit Card";
+        data:description        "React native credit card display component";
+        data:author             "Sonny Lazuardi";
+        data:url                "https://github.com/sonnylazuardi/react-native-credit-card";
+        .
+
+id:9 
+        data:title              "Android Color Picker";
+        data:description        "To customize the color of some background, text, or maybe for a painting application";
+        data:author             "Randy Sugianto";
+        data:url                "https://github.com/yukuku/ambilwarna";
+        .
+
+id:10 
+        data:title              "Image Picker";
+        data:description        "A configureable library to select image from gallery and camera without the hassle";
+        data:author             "Esa Firman";
+        data:url                "https://github.com/esafirm/android-image-picker";
+		.
+		
+id:11 
+        data:title              "Cafe Bar";
+        data:description        "An upgraded Snackbar for Android that provides more options and easy to use";
+        data:author             "Dani Mahardhika";
+        data:url                "https://github.com/danimahardhika/cafebar";
+        .
+
+id:12 
+        data:title              "Candy Bar";
+        data:description        "Android icon pack dashboard library";
+        data:author             "Dani Mahardhika";
+        data:url                "https://github.com/danimahardhika/candybar-library";
+        .
+
+id:13 
+        data:title              "Wallpaper Board";
+        data:description        "Android wallpaper dashboard library";
+        data:author             "Dani Mahardhika";
+        data:url                "https://github.com/danimahardhika/wallpaperboard";
+        .
+
+id:14 
+        data:title              "Subtitle Collapsing Toolbar Layout";
+        data:description        "Standard CollapsingToolbarLayout with subtitle support";
+        data:author             "Hendra Anggrian";
+        data:url                "https://github.com/HendraAnggrian/collapsingtoolbarlayout-subtitle";
+        .
+
+id:15 
+        data:title              "Elybin CMS";
+        data:description        "Free content management system that focuses on usability, speed and simplicity";
+        data:author             "Khakim Hudaya";
+        data:url                "https://github.com/elybin/ElybinCMS";
+        .
+
+id:16 
+        data:title              "Lentera";
+        data:description        "Learning Management from Nusantara";
+        data:author             "Laravel Indonesia";
+        data:url                "https://github.com/laravel-indonesia/lentera";
+        .
+
+id:17 
+        data:title              "Pusaka CMS";
+        data:description        "File-based CMS build with CodeIgniter Framework";
+        data:author             "Code Politan";
+        data:url                "https://github.com/codepolitanlab/pusakacms";
+        .
+
+id:18 
+        data:title              "Fiyo CMS";
+        data:description        "CMS Open Source with Easy Design, Fast Load, and SEO Friendly";
+        data:author             "FiyoCMS";
+        data:url                "https://github.com/FiyoCMS/FiyoCMS";
+        .
+
+id:19 
+        data:title              "PopojiCMS";
+        data:description        "Create Your Own Web Taste";
+        data:author             "PopojiCMS";
+        data:url                "https://github.com/PopojiCMS/PopojiCMS";
+        .
+
+id:20 
+        data:title              "Unzipall";
+        data:description        "Unzip all zip files in src directory to dst directory";
+        data:author             "Akeda Bagus";
+        data:url                "https://github.com/gedex/unzipall";
+        .
+
+id:21 
+        data:title              "Inflector";
+        data:description        "Inflector pluralizes and singularizes English nouns";
+        data:author             "Akeda Bagus";
+        data:url                "https://github.com/gedex/inflector";
+        .
+
+id:22 
+        data:title              "Snowboard";
+        data:description        "API blueprint parser and renderer";
+        data:author             "Bukalapak";
+        data:url                "https://github.com/bukalapak/snowboard";
+        .
+
+id:23 
+        data:title              "jQuery Awesome Sosmed Share Button";
+        data:description        "Awesome Social Media Share Button With Share Count";
+        data:author             "Ican Bachors";
+        data:url                "https://github.com/bachors/jQuery-Awesome-Sosmed-Share-Button";
+        .
+
+id:24 
+        data:title              "Esprima";
+        data:description        "ECMAScript parsing infrastructure for multipurpose analysis";
+        data:author             "jQuery";
+        data:url                "https://github.com/jquery/esprima";
+        .
+
+id:25 
+        data:title              "Phunt";
+        data:description        "Product Hunt Command Line Interface";
+        data:author             "Wahyu Kristianto";
+        data:url                "https://github.com/Kristories/phunt";
+        .
+
+id:26 
+        data:title              "React Simple PWA";
+        data:description        "Simple Progressive Web App Built with ReactJS";
+        data:author             "Naufal Rabbani";
+        data:url                "https://github.com/BosNaufal/react-simple-pwa";
+        .
+
+id:27
+        data:title              "Angular Starter";
+        data:description        "Gulp Angular Starter using TypeScript";
+        data:author             "Antony Budianto";
+        data:url                "https://github.com/antonybudianto/angular-starter";
+        .
+
+id:28 
+        data:title              "Angular Webpack Starter";
+        data:description        "Angular Webpack Starter with AoT compilation, Lazy-loading, and Hot Module Reload";
+        data:author             "Antony Budianto";
+        data:url                "https://github.com/antonybudianto/angular-webpack-starter";
+        .
+
+id:29 
+        data:title              "Express4 Bootstrap Starter";
+        data:description        "Lightweight Bootstrap NodeJS Apps Build Using ExpressJS 4";
+        data:author             "Hengki Sihombing";
+        data:url                "https://github.com/hengkiardo/express4-bootstrap-starter";
+        .
+
+id:30 
+        data:title              "Vue2 Starter";
+        data:description        "Simple Vue 2 Starter for single page application with Vuex and Vue Router";
+        data:author             "Naufal Rabbani";
+        data:url                "https://github.com/BosNaufal/vue2-starter";
+        .
+
+id:31 
+        data:title              "Vue2 Simplert";
+        data:description        "Vue 2 Simple Alert Component (SweetAlert Inspired)";
+        data:author             "Irfan Maulana";
+        data:url                "https://github.com/mazipan/vue2-simplert";
+        .
+
+id:32 
+        data:title              "Vue Soundcloud";
+        data:description        "Vuejs + SoundCloud demo app, for JogjaJS 4th meet up";
+        data:author             "Mulia Nasution";
+        data:url                "https://github.com/mul14/vue-soundcloud";
+        .
+
+id:33 
+        data:title              "Vue Autocomplete";
+        data:description        "Autocomplete Component for VueJS";
+        data:author             "Naufal Rabbani";
+        data:url                "https://github.com/BosNaufal/vue-autocomplete";
+        .
+
+id:34 
+        data:title              "Vue Mini Shop";
+        data:description        "Mini Online Shop Built With VueJS";
+        data:author             "Naufal Rabbani";
+        data:url                "https://github.com/BosNaufal/vue-mini-shop";
+        .
+
+id:35 
+        data:title              "Vue Loading Bar";
+        data:description        "Youtube Like Loading Bar Component for Vue.js";
+        data:author             "Naufal Rabbani";
+        data:url                "https://github.com/BosNaufal/vue-loading-bar";
+        .
+
+id:36
+        data:title              "PHP Bootstrap";
+        data:description        "Makes it easy to work on PHP language";
+        data:author             "Harazaki Dev";
+        data:url                "https://github.com/Harazaki/PHP-BOOTSTRAP";
+        .
+id:37 
+        data:title              "Simple Excel PHP";
+        data:description        "Easily read parse convert write between Microsoft Excel XML";
+        data:author             "Faisal Salman";
+        data:url                "https://github.com/faisalman/simple-excel-php";
+        .
+
+id:38 
+        data:title              "App Rocket";
+        data:description        "Example CRUD application with Laravel 5.2";
+        data:author             "Rahmat Awaludin";
+        data:url                "https://github.com/rawaludin/approcket-preproject";
+        .
+
+id:39 
+        data:title              "laravel-simple Uploader";
+        data:description        "Simple file uploader for Laravel 5";
+        data:author             "Roni Yusuf Manalu";
+        data:url                "https://github.com/rymanalu/laravel-simple-uploader";
+        .
+
+id:40 
+        data:title              "Factory Generator";
+        data:description        "Laravel 5 Model Factory Generator";
+        data:author             "Roni Yusuf Manalu";
+        data:url                "https://github.com/rymanalu/factory-generator";
+        .
+
+id:41 
+        data:title              "Semantic Form";
+        data:description        "Semantic-UI form helper";
+        data:author             "Laravolt";
+        data:url                "https://github.com/laravolt/semantic-form";
+        .
+
+id:42 
+        data:title              "WordGraph";
+        data:description        "Word Graph utility built with NLTK and Text Blob";
+        data:author             "Batista Harahap";
+        data:url                "https://github.com/tistaharahap/WordGraph";
+        .
+
+id:43 
+        data:title              "Hand Signals Recognition";
+        data:description        "Using Convolutional Neural Network implemented in TensorFlow";
+        data:author             "Bayu Aldi Yansyah";
+        data:url                "https://github.com/pyk/hsr";
+        .
+
+id:44 
+        data:title              "Sastrawi";
+        data:description        "High quality stemmer library for Indonesian Language";
+        data:author             "Sastrawi";
+        data:url                "https://github.com/sastrawi/sastrawi";
+        .
+
+id:45 
+        data:title              "Python Pentesting";
+        data:description        "Python Pentesting Tool";
+        data:author             "Jose Manuel Ortega";
+        data:url                "https://github.com/jmortega/python-pentesting";
+        .
+
+id:46 
+        data:title              "mozdownload";
+        data:description        "Easy to use download tool and API for different types of Firefox builds";
+        data:author             "Mozilla";
+        data:url                "https://github.com/mozilla/mozdownload";
+        .
+
+id:47
+        data:title              "Quran Android";
+        data:description        "A Quran reading application for android";
+        data:author             "Quran.com";
+        data:url                "https://github.com/quran/quran_android";
+        .
+
+id:48 
+        data:title              "Android Demos";
+        data:description        "Examples of Android applications";
+        data:author             "Novoda";
+        data:url                "https://github.com/novoda/android-demos";
+        .
+
+id:49 
+        data:title              "Scissors";
+        data:description        "Android image cropping library";
+        data:author             "Lyft";
+        data:url                "https://github.com/lyft/scissors";
+        .
+
+id:50 
+        data:title              "Image Blurring";
+        data:description        "Android blurring image(bitmap) by java and jni";
+        data:author             "Qiujuer";
+        data:url                "https://github.com/qiujuer/ImageBlurring";
+        .
+
+#Language
+id:L1 data:language "Java" .
+id:L2 data:language "Kotlin" .
+id:L3 data:language "JavaScript" .
+id:L4 data:language "PHP" .
+id:L5 data:language "Go" .
+id:L6 data:language "Vue" .
+id:L7 data:language "Python" .
+
+#relasi language
+id:1 data:hasLanguage id:L1 .
+id:2 data:hasLanguage id:L1 .
+id:3 data:hasLanguage id:L1 .
+id:4 data:hasLanguage id:L3 .
+id:5 data:hasLanguage id:L2 .
+id:6 data:hasLanguage id:L1 .
+id:7 data:hasLanguage id:L1 .
+id:8 data:hasLanguage id:L3 .
+id:9 data:hasLanguage id:L1 .
+id:10 data:hasLanguage id:L2 .
+id:11 data:hasLanguage id:L1 .
+id:12 data:hasLanguage id:L1 .
+id:13 data:hasLanguage id:L1 .
+id:14 data:hasLanguage id:L2 .
+id:15 data:hasLanguage id:L4 .
+id:16 data:hasLanguage id:L4 .
+id:17 data:hasLanguage id:L4 .
+id:18 data:hasLanguage id:L4 .
+id:19 data:hasLanguage id:L4 .
+id:20 data:hasLanguage id:L5 .
+id:21 data:hasLanguage id:L5 .
+id:22 data:hasLanguage id:L5 .
+id:23 data:hasLanguage id:L3 .
+id:24 data:hasLanguage id:L3 .
+id:25 data:hasLanguage id:L3 .
+id:26 data:hasLanguage id:L3 .
+id:27 data:hasLanguage id:L3 .
+id:28 data:hasLanguage id:L3 .
+id:29 data:hasLanguage id:L3 .
+id:30 data:hasLanguage id:L6 .
+id:31 data:hasLanguage id:L6 .
+id:32 data:hasLanguage id:L6 .
+id:33 data:hasLanguage id:L3 .
+id:34 data:hasLanguage id:L6 .
+id:35 data:hasLanguage id:L3 .
+id:36 data:hasLanguage id:L4 .
+id:37 data:hasLanguage id:L4 .
+id:38 data:hasLanguage id:L4 .
+id:39 data:hasLanguage id:L4 .
+id:40 data:hasLanguage id:L4 .
+id:41 data:hasLanguage id:L4 .
+id:42 data:hasLanguage id:L7 .
+id:43 data:hasLanguage id:L7 .
+id:44 data:hasLanguage id:L4 .
+id:45 data:hasLanguage id:L7 .
+id:46 data:hasLanguage id:L7 .
+id:47 data:hasLanguage id:L2 .
+id:48 data:hasLanguage id:L2 .
+id:49 data:hasLanguage id:L1 .
+id:50 data:hasLanguage id:L1 .
+
+
+#Framework
+id:F1 data:framework "Android Native" .
+id:F2 data:framework "React Native" .
+id:F3 data:framework "ReactJS" .
+id:F4 data:framework "CMS" .
+id:F5 data:framework "Go Native" .
+id:F6 data:framework "JavaScript Native" .
+id:F7 data:framework "Angular" .
+id:F8 data:framework "ExpressJS" .
+id:F9 data:framework "VueJS" .
+id:F10 data:framework "PHP Native" .
+id:F11 data:framework "Laravel" .
+id:F12 data:framework "Phyton Native" .
+
+#relasi framework
+id:1 data:hasFramework id:F1 .
+id:2 data:hasFramework id:F1 .
+id:3 data:hasFramework id:F2 .
+id:4 data:hasFramework id:F2 .
+id:5 data:hasFramework id:F1 .
+id:6 data:hasFramework id:F1 .
+id:7 data:hasFramework id:F1 .
+id:8 data:hasFramework id:F2 .
+id:9 data:hasFramework id:F1 .
+id:10 data:hasFramework id:F1 .
+id:11 data:hasFramework id:F1 .
+id:12 data:hasFramework id:F1 .
+id:13 data:hasFramework id:F1 .
+id:14 data:hasFramework id:F1 .
+id:15 data:hasFramework id:F4 .
+id:16 data:hasFramework id:F4 .
+id:17 data:hasFramework id:F4 .
+id:18 data:hasFramework id:F4 .
+id:19 data:hasFramework id:F4 .
+id:20 data:hasFramework id:F5 .
+id:21 data:hasFramework id:F5 .
+id:22 data:hasFramework id:F5 .
+id:23 data:hasFramework id:F6 .
+id:24 data:hasFramework id:F6 .
+id:25 data:hasFramework id:F6 .
+id:26 data:hasFramework id:F6 .
+id:27 data:hasFramework id:F7 .
+id:28 data:hasFramework id:F7 .
+id:29 data:hasFramework id:F8 .
+id:30 data:hasFramework id:F9 .
+id:31 data:hasFramework id:F9 .
+id:32 data:hasFramework id:F9 .
+id:33 data:hasFramework id:F9 .
+id:34 data:hasFramework id:F9 .
+id:35 data:hasFramework id:F9 .
+id:36 data:hasFramework id:F10 .
+id:37 data:hasFramework id:F10 .
+id:38 data:hasFramework id:F11 .
+id:39 data:hasFramework id:F11 .
+id:40 data:hasFramework id:F11 .
+id:41 data:hasFramework id:F11 .
+id:42 data:hasFramework id:F12 .
+id:43 data:hasFramework id:F12 .
+id:44 data:hasFramework id:F10 .
+id:45 data:hasFramework id:F12 .
+id:46 data:hasFramework id:F12 .
+id:47 data:hasFramework id:F1 .
+id:48 data:hasFramework id:F1 .
+id:49 data:hasFramework id:F1 .
+id:50 data:hasFramework id:F1 .
+
+
+
+#Tahun 
+id:Y1 data:year "2013" .
+id:Y2 data:year "2015" .
+id:Y3 data:year "2016" .
+id:Y4 data:year "2017" .
+id:Y5 data:year "2018" .
+id:Y6 data:year "2019" .
+id:Y7 data:year "2020" .
+id:Y8 data:year "2021" .
+
+#relasi tahun
+id:1 data:hasYear id:Y2 .
+id:2 data:hasYear id:Y2 .
+id:3 data:hasYear id:Y3 .
+id:4 data:hasYear id:Y3 .
+id:5 data:hasYear id:Y8 .
+id:6 data:hasYear id:Y5 .
+id:7 data:hasYear id:Y3 .
+id:8 data:hasYear id:Y6 .
+id:9 data:hasYear id:Y5 .
+id:10 data:hasYear id:Y8 .
+id:11 data:hasYear id:Y4 .
+id:12 data:hasYear id:Y5 .
+id:13 data:hasYear id:Y5 .
+id:14 data:hasYear id:Y7 .
+id:15 data:hasYear id:Y2 .
+id:16 data:hasYear id:Y2 .
+id:17 data:hasYear id:Y4 .
+id:18 data:hasYear id:Y3 .
+id:19 data:hasYear id:Y7 .
+id:20 data:hasYear id:Y3 .
+id:21 data:hasYear id:Y4 .
+id:22 data:hasYear id:Y8 .
+id:23 data:hasYear id:Y4 .
+id:24 data:hasYear id:Y8 .
+id:25 data:hasYear id:Y7 .
+id:26 data:hasYear id:Y3 .
+id:27 data:hasYear id:Y4 .
+id:28 data:hasYear id:Y4 .
+id:29 data:hasYear id:Y3 .
+id:30 data:hasYear id:Y4 .
+id:31 data:hasYear id:Y8 .
+id:32 data:hasYear id:Y4 .
+id:33 data:hasYear id:Y3 .
+id:34 data:hasYear id:Y3 .
+id:35 data:hasYear id:Y3 .
+id:36 data:hasYear id:Y5 .
+id:37 data:hasYear id:Y5 .
+id:38 data:hasYear id:Y3 .
+id:39 data:hasYear id:Y5 .
+id:40 data:hasYear id:Y4 .
+id:41 data:hasYear id:Y7 .
+id:42 data:hasYear id:Y1 .
+id:43 data:hasYear id:Y7 .
+id:44 data:hasYear id:Y4 .
+id:45 data:hasYear id:Y6 .
+id:46 data:hasYear id:Y7 .
+id:47 data:hasYear id:Y8 .
+id:48 data:hasYear id:Y6 .
+id:49 data:hasYear id:Y4 .
+id:50 data:hasYear id:Y4 .
+
+
