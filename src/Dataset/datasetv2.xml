@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="https://github.com/repo#">
+
+  <rdf:Description rdf:about="https://github.com/akun#1">
+    <ns0:title>Android StepsView</ns0:title>
+    <ns0:description>A simple progress steps view on Android</ns0:description>
+    <ns0:author>Ahmad Hasyim</ns0:author>
+    <ns0:url>https://github.com/lordhasyim/semacam-kumpulan-repo</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L1"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y2"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#2">
+    <ns0:title>WhatsApp Profile Collapsing Toolbar</ns0:title>
+    <ns0:description>An Android custom animation view that looks like WhastApp Profile screen style</ns0:description>
+    <ns0:author>Anton Nurdin Tuhadiansyah</ns0:author>
+    <ns0:url>https://github.com/anton46/WhatsApp-ProfileCollapsingToolbar</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L1"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y2"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#3">
+    <ns0:title>Ziliun React Native</ns0:title>
+    <ns0:description>Ziliun article reader android app built with React Native</ns0:description>
+    <ns0:author>Sonny Lazuardi</ns0:author>
+    <ns0:url>https://github.com/sonnylazuardi/ziliun-react-native</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L1"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F2"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#4">
+    <ns0:title>React Tomato Timer</ns0:title>
+    <ns0:description>A simple timer for a more productive way to work and study built with ReactJS</ns0:description>
+    <ns0:author>Sonny Lazuardi</ns0:author>
+    <ns0:url>https://github.com/sonnylazuardi/react-tomato-timer</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L3"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F2"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#5">
+    <ns0:title>Compressor</ns0:title>
+    <ns0:description>An android image compression library</ns0:description>
+    <ns0:author>Zetra</ns0:author>
+    <ns0:url>https://github.com/zetbaitsu/Compressor</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L2"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y8"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#6">
+    <ns0:title>Rx Downloader</ns0:title>
+    <ns0:description>An Rx wrapper for Download Manager in Android</ns0:description>
+    <ns0:author>Esa Firman</ns0:author>
+    <ns0:url>https://github.com/esafirm/RxDownloader</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L1"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y5"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#7">
+    <ns0:title>Image Effect Filter</ns0:title>
+    <ns0:description>Android image filter processing sample using layer drawable and effect factory android</ns0:description>
+    <ns0:author>M. Nafian Wildana</ns0:author>
+    <ns0:url>https://github.com/mnafian/ImageEffectFilter</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L1"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#8">
+    <ns0:title>React Native Credit Card</ns0:title>
+    <ns0:description>React native credit card display component</ns0:description>
+    <ns0:author>Sonny Lazuardi</ns0:author>
+    <ns0:url>https://github.com/sonnylazuardi/react-native-credit-card</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L3"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F2"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y6"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#9">
+    <ns0:title>Android Color Picker</ns0:title>
+    <ns0:description>To customize the color of some background, text, or maybe for a painting application</ns0:description>
+    <ns0:author>Randy Sugianto</ns0:author>
+    <ns0:url>https://github.com/yukuku/ambilwarna</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L1"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y5"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#10">
+    <ns0:title>Image Picker</ns0:title>
+    <ns0:description>A configureable library to select image from gallery and camera without the hassle</ns0:description>
+    <ns0:author>Esa Firman</ns0:author>
+    <ns0:url>https://github.com/esafirm/android-image-picker</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L2"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y8"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#11">
+    <ns0:title>Cafe Bar</ns0:title>
+    <ns0:description>An upgraded Snackbar for Android that provides more options and easy to use</ns0:description>
+    <ns0:author>Dani Mahardhika</ns0:author>
+    <ns0:url>https://github.com/danimahardhika/cafebar</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L1"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y4"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#12">
+    <ns0:title>Candy Bar</ns0:title>
+    <ns0:description>Android icon pack dashboard library</ns0:description>
+    <ns0:author>Dani Mahardhika</ns0:author>
+    <ns0:url>https://github.com/danimahardhika/candybar-library</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L1"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y5"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#13">
+    <ns0:title>Wallpaper Board</ns0:title>
+    <ns0:description>Android wallpaper dashboard library</ns0:description>
+    <ns0:author>Dani Mahardhika</ns0:author>
+    <ns0:url>https://github.com/danimahardhika/wallpaperboard</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L1"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y5"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#14">
+    <ns0:title>Subtitle Collapsing Toolbar Layout</ns0:title>
+    <ns0:description>Standard CollapsingToolbarLayout with subtitle support</ns0:description>
+    <ns0:author>Hendra Anggrian</ns0:author>
+    <ns0:url>https://github.com/HendraAnggrian/collapsingtoolbarlayout-subtitle</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L2"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y7"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#15">
+    <ns0:title>Elybin CMS</ns0:title>
+    <ns0:description>Free content management system that focuses on usability, speed and simplicity</ns0:description>
+    <ns0:author>Khakim Hudaya</ns0:author>
+    <ns0:url>https://github.com/elybin/ElybinCMS</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L4"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F4"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y2"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#16">
+    <ns0:title>Lentera</ns0:title>
+    <ns0:description>Learning Management from Nusantara</ns0:description>
+    <ns0:author>Laravel Indonesia</ns0:author>
+    <ns0:url>https://github.com/laravel-indonesia/lentera</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L4"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F4"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y2"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#17">
+    <ns0:title>Pusaka CMS</ns0:title>
+    <ns0:description>File-based CMS build with CodeIgniter Framework</ns0:description>
+    <ns0:author>Code Politan</ns0:author>
+    <ns0:url>https://github.com/codepolitanlab/pusakacms</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L4"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F4"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y4"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#18">
+    <ns0:title>Fiyo CMS</ns0:title>
+    <ns0:description>CMS Open Source with Easy Design, Fast Load, and SEO Friendly</ns0:description>
+    <ns0:author>FiyoCMS</ns0:author>
+    <ns0:url>https://github.com/FiyoCMS/FiyoCMS</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L4"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F4"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#19">
+    <ns0:title>PopojiCMS</ns0:title>
+    <ns0:description>Create Your Own Web Taste</ns0:description>
+    <ns0:author>PopojiCMS</ns0:author>
+    <ns0:url>https://github.com/PopojiCMS/PopojiCMS</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L4"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F4"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y7"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#20">
+    <ns0:title>Unzipall</ns0:title>
+    <ns0:description>Unzip all zip files in src directory to dst directory</ns0:description>
+    <ns0:author>Akeda Bagus</ns0:author>
+    <ns0:url>https://github.com/gedex/unzipall</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L5"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F5"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#21">
+    <ns0:title>Inflector</ns0:title>
+    <ns0:description>Inflector pluralizes and singularizes English nouns</ns0:description>
+    <ns0:author>Akeda Bagus</ns0:author>
+    <ns0:url>https://github.com/gedex/inflector</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L5"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F5"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y4"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#22">
+    <ns0:title>Snowboard</ns0:title>
+    <ns0:description>API blueprint parser and renderer</ns0:description>
+    <ns0:author>Bukalapak</ns0:author>
+    <ns0:url>https://github.com/bukalapak/snowboard</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L5"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F5"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y8"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#23">
+    <ns0:title>jQuery Awesome Sosmed Share Button</ns0:title>
+    <ns0:description>Awesome Social Media Share Button With Share Count</ns0:description>
+    <ns0:author>Ican Bachors</ns0:author>
+    <ns0:url>https://github.com/bachors/jQuery-Awesome-Sosmed-Share-Button</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L3"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F6"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y4"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#24">
+    <ns0:title>Esprima</ns0:title>
+    <ns0:description>ECMAScript parsing infrastructure for multipurpose analysis</ns0:description>
+    <ns0:author>jQuery</ns0:author>
+    <ns0:url>https://github.com/jquery/esprima</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L3"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F6"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y8"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#25">
+    <ns0:title>Phunt</ns0:title>
+    <ns0:description>Product Hunt Command Line Interface</ns0:description>
+    <ns0:author>Wahyu Kristianto</ns0:author>
+    <ns0:url>https://github.com/Kristories/phunt</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L3"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F6"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y7"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#26">
+    <ns0:title>React Simple PWA</ns0:title>
+    <ns0:description>Simple Progressive Web App Built with ReactJS</ns0:description>
+    <ns0:author>Naufal Rabbani</ns0:author>
+    <ns0:url>https://github.com/BosNaufal/react-simple-pwa</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L3"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F6"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#27">
+    <ns0:title>Angular Starter</ns0:title>
+    <ns0:description>Gulp Angular Starter using TypeScript</ns0:description>
+    <ns0:author>Antony Budianto</ns0:author>
+    <ns0:url>https://github.com/antonybudianto/angular-starter</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L3"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F7"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y4"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#28">
+    <ns0:title>Angular Webpack Starter</ns0:title>
+    <ns0:description>Angular Webpack Starter with AoT compilation, Lazy-loading, and Hot Module Reload</ns0:description>
+    <ns0:author>Antony Budianto</ns0:author>
+    <ns0:url>https://github.com/antonybudianto/angular-webpack-starter</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L3"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F7"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y4"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#29">
+    <ns0:title>Express4 Bootstrap Starter</ns0:title>
+    <ns0:description>Lightweight Bootstrap NodeJS Apps Build Using ExpressJS 4</ns0:description>
+    <ns0:author>Hengki Sihombing</ns0:author>
+    <ns0:url>https://github.com/hengkiardo/express4-bootstrap-starter</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L3"/>
+    <ns0:hasFramework>
+      <rdf:Description rdf:about="https://github.com/akun#F8">
+        <ns0:framework>ExpressJS</ns0:framework>
+      </rdf:Description>
+    </ns0:hasFramework>
+
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#30">
+    <ns0:title>Vue2 Starter</ns0:title>
+    <ns0:description>Simple Vue 2 Starter for single page application with Vuex and Vue Router</ns0:description>
+    <ns0:author>Naufal Rabbani</ns0:author>
+    <ns0:url>https://github.com/BosNaufal/vue2-starter</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L6"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F9"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y4"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#31">
+    <ns0:title>Vue2 Simplert</ns0:title>
+    <ns0:description>Vue 2 Simple Alert Component (SweetAlert Inspired)</ns0:description>
+    <ns0:author>Irfan Maulana</ns0:author>
+    <ns0:url>https://github.com/mazipan/vue2-simplert</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L6"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F9"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y8"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#32">
+    <ns0:title>Vue Soundcloud</ns0:title>
+    <ns0:description>Vuejs + SoundCloud demo app, for JogjaJS 4th meet up</ns0:description>
+    <ns0:author>Mulia Nasution</ns0:author>
+    <ns0:url>https://github.com/mul14/vue-soundcloud</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L6"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F9"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y4"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#33">
+    <ns0:title>Vue Autocomplete</ns0:title>
+    <ns0:description>Autocomplete Component for VueJS</ns0:description>
+    <ns0:author>Naufal Rabbani</ns0:author>
+    <ns0:url>https://github.com/BosNaufal/vue-autocomplete</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L3"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F9"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#34">
+    <ns0:title>Vue Mini Shop</ns0:title>
+    <ns0:description>Mini Online Shop Built With VueJS</ns0:description>
+    <ns0:author>Naufal Rabbani</ns0:author>
+    <ns0:url>https://github.com/BosNaufal/vue-mini-shop</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L6"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F9"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#35">
+    <ns0:title>Vue Loading Bar</ns0:title>
+    <ns0:description>Youtube Like Loading Bar Component for Vue.js</ns0:description>
+    <ns0:author>Naufal Rabbani</ns0:author>
+    <ns0:url>https://github.com/BosNaufal/vue-loading-bar</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L3"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F9"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#36">
+    <ns0:title>PHP Bootstrap</ns0:title>
+    <ns0:description>Makes it easy to work on PHP language</ns0:description>
+    <ns0:author>Harazaki Dev</ns0:author>
+    <ns0:url>https://github.com/Harazaki/PHP-BOOTSTRAP</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L4"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F10"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y5"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#37">
+    <ns0:title>Simple Excel PHP</ns0:title>
+    <ns0:description>Easily read parse convert write between Microsoft Excel XML</ns0:description>
+    <ns0:author>Faisal Salman</ns0:author>
+    <ns0:url>https://github.com/faisalman/simple-excel-php</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L4"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F10"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y5"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#38">
+    <ns0:title>App Rocket</ns0:title>
+    <ns0:description>Example CRUD application with Laravel 5.2</ns0:description>
+    <ns0:author>Rahmat Awaludin</ns0:author>
+    <ns0:url>https://github.com/rawaludin/approcket-preproject</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L4"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F11"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y3"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#39">
+    <ns0:title>laravel-simple Uploader</ns0:title>
+    <ns0:description>Simple file uploader for Laravel 5</ns0:description>
+    <ns0:author>Roni Yusuf Manalu</ns0:author>
+    <ns0:url>https://github.com/rymanalu/laravel-simple-uploader</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L4"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F11"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y5"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#40">
+    <ns0:title>Factory Generator</ns0:title>
+    <ns0:description>Laravel 5 Model Factory Generator</ns0:description>
+    <ns0:author>Roni Yusuf Manalu</ns0:author>
+    <ns0:url>https://github.com/rymanalu/factory-generator</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L4"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F11"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y4"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#41">
+    <ns0:title>Semantic Form</ns0:title>
+    <ns0:description>Semantic-UI form helper</ns0:description>
+    <ns0:author>Laravolt</ns0:author>
+    <ns0:url>https://github.com/laravolt/semantic-form</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L4"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F11"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y7"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#42">
+    <ns0:title>WordGraph</ns0:title>
+    <ns0:description>Word Graph utility built with NLTK and Text Blob</ns0:description>
+    <ns0:author>Batista Harahap</ns0:author>
+    <ns0:url>https://github.com/tistaharahap/WordGraph</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L7"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F12"/>
+    <ns0:hasYear>
+      <rdf:Description rdf:about="https://github.com/akun#Y1">
+        <ns0:year>2013</ns0:year>
+      </rdf:Description>
+    </ns0:hasYear>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#43">
+    <ns0:title>Hand Signals Recognition</ns0:title>
+    <ns0:description>Using Convolutional Neural Network implemented in TensorFlow</ns0:description>
+    <ns0:author>Bayu Aldi Yansyah</ns0:author>
+    <ns0:url>https://github.com/pyk/hsr</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L7"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F12"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y7"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#44">
+    <ns0:title>Sastrawi</ns0:title>
+    <ns0:description>High quality stemmer library for Indonesian Language</ns0:description>
+    <ns0:author>Sastrawi</ns0:author>
+    <ns0:url>https://github.com/sastrawi/sastrawi</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L4"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F10"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y4"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#45">
+    <ns0:title>Python Pentesting</ns0:title>
+    <ns0:description>Python Pentesting Tool</ns0:description>
+    <ns0:author>Jose Manuel Ortega</ns0:author>
+    <ns0:url>https://github.com/jmortega/python-pentesting</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L7"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F12"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y6"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#46">
+    <ns0:title>mozdownload</ns0:title>
+    <ns0:description>Easy to use download tool and API for different types of Firefox builds</ns0:description>
+    <ns0:author>Mozilla</ns0:author>
+    <ns0:url>https://github.com/mozilla/mozdownload</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L7"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F12"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y7"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#47">
+    <ns0:title>Quran Android</ns0:title>
+    <ns0:description>A Quran reading application for android</ns0:description>
+    <ns0:author>Quran.com</ns0:author>
+    <ns0:url>https://github.com/quran/quran_android</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L2"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y8"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#48">
+    <ns0:title>Android Demos</ns0:title>
+    <ns0:description>Examples of Android applications</ns0:description>
+    <ns0:author>Novoda</ns0:author>
+    <ns0:url>https://github.com/novoda/android-demos</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L2"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y6"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#49">
+    <ns0:title>Scissors</ns0:title>
+    <ns0:description>Android image cropping library</ns0:description>
+    <ns0:author>Lyft</ns0:author>
+    <ns0:url>https://github.com/lyft/scissors</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L1"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y4"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#50">
+    <ns0:title>Image Blurring</ns0:title>
+    <ns0:description>Android blurring image(bitmap) by java and jni</ns0:description>
+    <ns0:author>Qiujuer</ns0:author>
+    <ns0:url>https://github.com/qiujuer/ImageBlurring</ns0:url>
+    <ns0:hasLanguage rdf:resource="https://github.com/akun#L1"/>
+    <ns0:hasFramework rdf:resource="https://github.com/akun#F1"/>
+    <ns0:hasYear rdf:resource="https://github.com/akun#Y4"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#L1">
+    <ns0:language>Java</ns0:language>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#L2">
+    <ns0:language>Kotlin</ns0:language>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#L3">
+    <ns0:language>JavaScript</ns0:language>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#L4">
+    <ns0:language>PHP</ns0:language>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#L5">
+    <ns0:language>Go</ns0:language>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#L6">
+    <ns0:language>Vue</ns0:language>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#L7">
+    <ns0:language>Python</ns0:language>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#F1">
+    <ns0:framework>Android Native</ns0:framework>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#F2">
+    <ns0:framework>React Native</ns0:framework>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#F3">
+    <ns0:framework>ReactJS</ns0:framework>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#F4">
+    <ns0:framework>CMS</ns0:framework>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#F5">
+    <ns0:framework>Go Native</ns0:framework>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#F6">
+    <ns0:framework>JavaScript Native</ns0:framework>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#F7">
+    <ns0:framework>Angular</ns0:framework>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#F9">
+    <ns0:framework>VueJS</ns0:framework>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#F10">
+    <ns0:framework>PHP Native</ns0:framework>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#F11">
+    <ns0:framework>Laravel</ns0:framework>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#F12">
+    <ns0:framework>Phyton Native</ns0:framework>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#Y2">
+    <ns0:year>2015</ns0:year>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#Y3">
+    <ns0:year>2016</ns0:year>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#Y4">
+    <ns0:year>2017</ns0:year>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#Y5">
+    <ns0:year>2018</ns0:year>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#Y6">
+    <ns0:year>2019</ns0:year>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#Y7">
+    <ns0:year>2020</ns0:year>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://github.com/akun#Y8">
+    <ns0:year>2021</ns0:year>
+  </rdf:Description>
+
+</rdf:RDF>

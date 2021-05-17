@@ -1,0 +1,26 @@
+PREFIX data: <https://github.com/repo#>
+      PREFIX id: <https://github.com/akun#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      SELECT ?title ?description ?author ?url ?language ?framework ?year
+      WHERE
+      {
+        ?id data:title ?title ;
+            data:description ?description ;
+            data:author ?author ;
+            data:url ?url ;
+            data:hasLanguage ?nameLanguage ;
+            data:hasFramework ?nameFramework ;
+            data:hasYear ?nameYear .
+            
+            ?nameLanguage data:language ?language .
+            ?nameFramework data:framework ?framework .
+            ?nameYear data:year ?year .
+            
+            FILTER contains(lcase(str(?title)), lcase(str("${value.title ? value.title : ''}")))
+            FILTER contains(lcase(str(?description)), lcase(str("${value.description ? value.description : ''}")))
+            FILTER contains(lcase(str(?author)), lcase(str("${value.author ? value.author : ''}")))
+            FILTER contains(lcase(str(?url)), lcase(str("${value.url ? value.url : ''}")))
+            FILTER contains(lcase(str(?language)), lcase(str("${value.language ? value.language : ''}")))
+            FILTER contains(lcase(str(?framework)), lcase(str("${value.framework ? value.framework : ''}")))
+            FILTER contains(lcase(str(?year)), lcase(str("${value.year ? value.year : ''}")))
+      }
