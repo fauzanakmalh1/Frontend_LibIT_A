@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import qs from "qs";
 
-export default function Home() {
+export default function Advanced() {
   
   const [value, setValue] = useState({
     codes: [],
@@ -43,16 +43,13 @@ export default function Home() {
             ?nameFramework data:framework ?framework .
             ?nameYear data:year ?year .
             
-            FILTER (
-              regex(?id, "^${value.input}", "i") ||
-              regex(?title, "^${value.input}", "i") ||
-              regex(?description, "^${value.input}", "i") ||
-              regex(?author, "^${value.input}", "i") ||
-              regex(?url, "^${value.input}", "i") ||
-              regex(?language, "^${value.input}", "i") ||
-              regex(?framework, "^${value.input}", "i") ||
-              regex(?year, "^${value.input}", "i")
-            )
+            FILTER contains(lcase(str(?title)), lcase(str("${value.title ? value.title : ''}")))
+            FILTER contains(lcase(str(?description)), lcase(str("${value.description ? value.description : ''}")))
+            FILTER contains(lcase(str(?author)), lcase(str("${value.author ? value.author : ''}")))
+            FILTER contains(lcase(str(?url)), lcase(str("${value.url ? value.url : ''}")))
+            FILTER contains(lcase(str(?language)), lcase(str("${value.language ? value.language : ''}")))
+            FILTER contains(lcase(str(?framework)), lcase(str("${value.framework ? value.framework : ''}")))
+            FILTER contains(lcase(str(?year)), lcase(str("${value.year ? value.year : ''}")))
       }`,
     };
 
@@ -92,10 +89,38 @@ export default function Home() {
     }
   }
 
-  const handleChange = event => {
+  const handleChangeTitle = event => {
     setValue({
       ...value,
-      input: event.target.value,
+      'title': event.target.value,
+    });
+  }
+
+    const handleChangeAuthor = event => {
+    setValue({
+      ...value,
+      'author': event.target.value,
+    });
+  }
+
+  const handleChangeLanguage = event => {
+    setValue({
+      ...value,
+      'language': event.target.value,
+    });
+  }
+
+  const handleChangeFramework = event => {
+    setValue({
+      ...value,
+      'framework': event.target.value,
+    });
+  }
+
+  const handleChangeYear = event => {
+    setValue({
+      ...value,
+      'year': event.target.value,
     });
   }
 
@@ -152,7 +177,7 @@ export default function Home() {
                 </div>
                 <div className="ml-auto">
                   <div className="d-flex flex-row align-items-end justify-content-end">
-                    <span className="nav_about_text">
+                    <span className="nav_about_text active">
                       <a href="/Advanced">Advanced</a>
                     </span>
                     <span className="nav_about_text ml-4">
@@ -195,16 +220,67 @@ export default function Home() {
                           >
                             <div className="align-items-center justify-content-center">
                               <div className="row">
-                                <div className="col-md-12">
+                                <div className="col-md-6">
                                   <div className="code_form_inputs align-items-center justify-content-center">
                                     <input
                                       type="text"
-                                      className="code_form_input code_form_input_repo"
-                                      placeholder="Search Repository"
-                                      setvalue={value.input}
-                                      onChange={handleChange}
-                                      required="required"
+                                      className="code_form_input"
+                                      placeholder="Title"
+                                      setvalue={value.title}
+                                      onChange={handleChangeTitle}
                                     />
+                                  </div>
+                                </div>
+                                <div className="col-md-6">
+                                  <div className="code_form_inputs align-items-center justify-content-center">
+                                    <input
+                                      type="text"
+                                      className="code_form_input"
+                                      placeholder="Author"
+                                      setvalue={value.author}
+                                      onChange={handleChangeAuthor}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col-md-6">
+                                  <div className="code_form_inputs align-items-center justify-content-center">
+                                    <input
+                                      type="text"
+                                      className="code_form_input"
+                                      placeholder="Language"
+                                      setvalue={value.language}
+                                      onChange={handleChangeLanguage}
+                                    />
+                                  </div>
+                                </div>
+                                <div className="col-md-6">
+                                  <div className="code_form_inputs align-items-center justify-content-center">
+                                    <input
+                                      type="text"
+                                      className="code_form_input"
+                                      placeholder="Framework"
+                                      setvalue={value.framework}
+                                      onChange={handleChangeFramework}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col-md-12">
+                                  <div className="code_form_inputs align-items-center justify-content-center">
+                                    <select setvalue={value.year} className="dropdown code_form_input" onChange={handleChangeYear}>
+                                      <option value="">Year</option>
+                                      <option value="2013">2013</option>
+                                      <option value="2015">2015</option>
+                                      <option value="2016">2016</option>
+                                      <option value="2017">2017</option>
+                                      <option value="2018">2018</option>
+                                      <option value="2019">2019</option>
+                                      <option value="2020">2020</option>
+                                      <option value="2021">2021</option>
+                                    </select>
                                   </div>
                                 </div>
                               </div>
