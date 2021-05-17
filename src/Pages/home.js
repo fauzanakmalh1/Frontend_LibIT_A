@@ -10,14 +10,15 @@ export default function Home() {
     description: '',
     author: '',
     url: '',
+    download: '',
     language: '',
     framework: '',
     year: ''
   });
 
   const getData = async () => {
-    const BASE_URL = "http://localhost:3030/codes/query";
-    // const BASE_URL = "https://qrary-fuseki-service.herokuapp.com/codes/query";
+    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = "https://qrary-fuseki-service.herokuapp.com/repo-code/query";
 
     const headers = {
       'Accept': 'application/sparql-results+json,*/*;q=0.9',
@@ -28,13 +29,14 @@ export default function Home() {
       query: `PREFIX data: <https://github.com/repo#>
       PREFIX id: <https://github.com/akun#>
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-      SELECT ?title ?description ?author ?url ?language ?framework ?year
+      SELECT ?title ?description ?author ?url ?download ?language ?framework ?year
       WHERE
       {
         ?id data:title ?title ;
             data:description ?description ;
             data:author ?author ;
             data:url ?url ;
+            data:download ?download ;
             data:hasLanguage ?nameLanguage ;
             data:hasFramework ?nameFramework ;
             data:hasYear ?nameYear .
@@ -49,6 +51,7 @@ export default function Home() {
               regex(?description, "^${value.input}", "i") ||
               regex(?author, "^${value.input}", "i") ||
               regex(?url, "^${value.input}", "i") ||
+              regex(?download, "^${value.input}", "i") ||
               regex(?language, "^${value.input}", "i") ||
               regex(?framework, "^${value.input}", "i") ||
               regex(?year, "^${value.input}", "i")
@@ -86,6 +89,7 @@ export default function Home() {
       "description": codes.description.value,
       "author": codes.author.value,
       "url": codes.url.value,
+      "download": codes.download.value,
       "language": codes.language.value,
       "framework": codes.framework.value,
       "year": codes.year.value
@@ -124,6 +128,15 @@ export default function Home() {
         URL :{" "}
         <a href={code.url} target="_blank" rel="noreferrer">
           {code.url}
+        </a>
+        <br />
+        <a href={code.download} rel="noreferrer">
+          <button
+            type="button"
+            className="code_form_button button mt-2"
+          >
+            <span><img src="/images/img-download.svg" className="img-download mr-2" alt="Download" />Download Here</span>
+          </button>
         </a>
         <br />
         <hr className="line-style"></hr>
