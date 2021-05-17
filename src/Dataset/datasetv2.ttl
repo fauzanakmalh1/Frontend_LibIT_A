@@ -7,6 +7,7 @@ id:1
         data:description        "A simple progress steps view on Android";
         data:author             "Ahmad Hasyim";
         data:url                "https://github.com/lordhasyim/semacam-kumpulan-repo";
+        data:download           "https://github.com/lordhasyim/semacam-kumpulan-repo/archive/refs/heads/master.zip";
         .
 
 id:2 
@@ -14,6 +15,7 @@ id:2
         data:description        "An Android custom animation view that looks like WhastApp Profile screen style";
         data:author             "Anton Nurdin Tuhadiansyah";
         data:url                "https://github.com/anton46/WhatsApp-ProfileCollapsingToolbar";
+        data:download           "https://github.com/anton46/WhatsApp-ProfileCollapsingToolbar/archive/refs/heads/master.zip";
         .
 
 id:3 
@@ -21,6 +23,7 @@ id:3
         data:description        "Ziliun article reader android app built with React Native";
         data:author             "Sonny Lazuardi";
         data:url                "https://github.com/sonnylazuardi/ziliun-react-native";
+        data:download           "https://github.com/sonnylazuardi/ziliun-react-native/archive/refs/heads/master.zip";
         .
 
 id:4 
@@ -28,6 +31,7 @@ id:4
         data:description        "A simple timer for a more productive way to work and study built with ReactJS";
         data:author             "Sonny Lazuardi";
         data:url                "https://github.com/sonnylazuardi/react-tomato-timer";
+        data:download           "https://github.com/sonnylazuardi/react-tomato-timer/archive/refs/heads/master.zip";
         .
 
 id:5 
@@ -35,6 +39,7 @@ id:5
         data:description        "An android image compression library";
         data:author             "Zetra";
         data:url                "https://github.com/zetbaitsu/Compressor";
+        data:download           "https://github.com/zetbaitsu/Compressor/archive/refs/heads/master.zip";
         .
 
 id:6 
@@ -42,6 +47,7 @@ id:6
         data:description        "An Rx wrapper for Download Manager in Android";
         data:author             "Esa Firman";
         data:url                "https://github.com/esafirm/RxDownloader";
+        data:download           "https://github.com/esafirm/RxDownloader/archive/refs/heads/master.zip";
         .
 
 id:7 
@@ -49,6 +55,7 @@ id:7
         data:description        "Android image filter processing sample using layer drawable and effect factory android";
         data:author             "M. Nafian Wildana";
         data:url                "https://github.com/mnafian/ImageEffectFilter";
+        data:download           "https://github.com/mnafian/ImageEffectFilter/archive/refs/heads/master.zip";
         .
 
 id:8 
@@ -56,6 +63,7 @@ id:8
         data:description        "React native credit card display component";
         data:author             "Sonny Lazuardi";
         data:url                "https://github.com/sonnylazuardi/react-native-credit-card";
+        data:download           "https://github.com/sonnylazuardi/react-native-credit-card/archive/refs/heads/master.zip";
         .
 
 id:9 
@@ -63,6 +71,7 @@ id:9
         data:description        "To customize the color of some background, text, or maybe for a painting application";
         data:author             "Randy Sugianto";
         data:url                "https://github.com/yukuku/ambilwarna";
+        data:download           "https://github.com/yukuku/ambilwarna/archive/refs/heads/master.zip";
         .
 
 id:10 
@@ -70,6 +79,7 @@ id:10
         data:description        "A configureable library to select image from gallery and camera without the hassle";
         data:author             "Esa Firman";
         data:url                "https://github.com/esafirm/android-image-picker";
+        data:download           "https://github.com/esafirm/android-image-picker/archive/refs/heads/main.zip";
 		.
 		
 id:11 
@@ -77,6 +87,7 @@ id:11
         data:description        "An upgraded Snackbar for Android that provides more options and easy to use";
         data:author             "Dani Mahardhika";
         data:url                "https://github.com/danimahardhika/cafebar";
+        data:download           "https://github.com/danimahardhika/cafebar/archive/refs/heads/master.zip";
         .
 
 id:12 
@@ -84,6 +95,7 @@ id:12
         data:description        "Android icon pack dashboard library";
         data:author             "Dani Mahardhika";
         data:url                "https://github.com/danimahardhika/candybar-library";
+        data:download           "https://github.com/danimahardhika/candybar-library/archive/refs/heads/master.zip";
         .
 
 id:13 
@@ -91,6 +103,7 @@ id:13
         data:description        "Android wallpaper dashboard library";
         data:author             "Dani Mahardhika";
         data:url                "https://github.com/danimahardhika/wallpaperboard";
+        data:download           "https://github.com/danimahardhika/wallpaperboard/archive/refs/heads/master.zip";
         .
 
 id:14 
@@ -98,6 +111,7 @@ id:14
         data:description        "Standard CollapsingToolbarLayout with subtitle support";
         data:author             "Hendra Anggrian";
         data:url                "https://github.com/HendraAnggrian/collapsingtoolbarlayout-subtitle";
+        data:download           "https://github.com/HendraAnggrian/collapsingtoolbarlayout-subtitle/archive/refs/heads/master.zip";
         .
 
 id:15 
@@ -105,6 +119,7 @@ id:15
         data:description        "Free content management system that focuses on usability, speed and simplicity";
         data:author             "Khakim Hudaya";
         data:url                "https://github.com/elybin/ElybinCMS";
+        data:download           "https://github.com/elybin/ElybinCMS/archive/refs/heads/master.zip";
         .
 
 id:16 
@@ -112,6 +127,7 @@ id:16
         data:description        "Learning Management from Nusantara";
         data:author             "Laravel Indonesia";
         data:url                "https://github.com/laravel-indonesia/lentera";
+        data:download           "https://github.com/laravel-indonesia/lentera/archive/refs/heads/master.zip";
         .
 
 id:17 
@@ -119,6 +135,7 @@ id:17
         data:description        "File-based CMS build with CodeIgniter Framework";
         data:author             "Code Politan";
         data:url                "https://github.com/codepolitanlab/pusakacms";
+        data:download           "https://github.com/codepolitanlab/pusakacms/archive/refs/heads/master.zip";
         .
 
 id:18 
@@ -126,6 +143,7 @@ id:18
         data:description        "CMS Open Source with Easy Design, Fast Load, and SEO Friendly";
         data:author             "FiyoCMS";
         data:url                "https://github.com/FiyoCMS/FiyoCMS";
+        data:download           "https://github.com/FiyoCMS/FiyoCMS/archive/refs/heads/master.zip";
         .
 
 id:19 
@@ -133,6 +151,7 @@ id:19
         data:description        "Create Your Own Web Taste";
         data:author             "PopojiCMS";
         data:url                "https://github.com/PopojiCMS/PopojiCMS";
+        data:download           "https://github.com/PopojiCMS/PopojiCMS/archive/refs/heads/master.zip";
         .
 
 id:20 
@@ -140,6 +159,7 @@ id:20
         data:description        "Unzip all zip files in src directory to dst directory";
         data:author             "Akeda Bagus";
         data:url                "https://github.com/gedex/unzipall";
+        data:download           "https://github.com/gedex/unzipall/archive/refs/heads/master.zip";
         .
 
 id:21 
@@ -147,6 +167,7 @@ id:21
         data:description        "Inflector pluralizes and singularizes English nouns";
         data:author             "Akeda Bagus";
         data:url                "https://github.com/gedex/inflector";
+        data:download           "https://github.com/gedex/inflector/archive/refs/heads/master.zip";
         .
 
 id:22 
@@ -154,6 +175,7 @@ id:22
         data:description        "API blueprint parser and renderer";
         data:author             "Bukalapak";
         data:url                "https://github.com/bukalapak/snowboard";
+        data:download           "https://github.com/bukalapak/snowboard/archive/refs/heads/master.zip";
         .
 
 id:23 
@@ -161,6 +183,7 @@ id:23
         data:description        "Awesome Social Media Share Button With Share Count";
         data:author             "Ican Bachors";
         data:url                "https://github.com/bachors/jQuery-Awesome-Sosmed-Share-Button";
+        data:download            "https://github.com/bachors/jQuery-Awesome-Sosmed-Share-Button/archive/refs/heads/master.zip";
         .
 
 id:24 
@@ -168,6 +191,7 @@ id:24
         data:description        "ECMAScript parsing infrastructure for multipurpose analysis";
         data:author             "jQuery";
         data:url                "https://github.com/jquery/esprima";
+        data:download           "https://github.com/jquery/esprima/archive/refs/heads/main.zip";
         .
 
 id:25 
@@ -175,6 +199,7 @@ id:25
         data:description        "Product Hunt Command Line Interface";
         data:author             "Wahyu Kristianto";
         data:url                "https://github.com/Kristories/phunt";
+        data:download           "https://github.com/Kristories/phunt/archive/refs/heads/master.zip";
         .
 
 id:26 
@@ -182,6 +207,7 @@ id:26
         data:description        "Simple Progressive Web App Built with ReactJS";
         data:author             "Naufal Rabbani";
         data:url                "https://github.com/BosNaufal/react-simple-pwa";
+        data:download           "https://github.com/BosNaufal/react-simple-pwa/archive/refs/heads/master.zip";
         .
 
 id:27
@@ -189,6 +215,7 @@ id:27
         data:description        "Gulp Angular Starter using TypeScript";
         data:author             "Antony Budianto";
         data:url                "https://github.com/antonybudianto/angular-starter";
+        data:download           "https://github.com/antonybudianto/angular-starter/archive/refs/heads/master.zip";
         .
 
 id:28 
@@ -196,6 +223,7 @@ id:28
         data:description        "Angular Webpack Starter with AoT compilation, Lazy-loading, and Hot Module Reload";
         data:author             "Antony Budianto";
         data:url                "https://github.com/antonybudianto/angular-webpack-starter";
+        data:download           "https://github.com/antonybudianto/angular-webpack-starter/archive/refs/heads/master.zip";
         .
 
 id:29 
@@ -203,6 +231,7 @@ id:29
         data:description        "Lightweight Bootstrap NodeJS Apps Build Using ExpressJS 4";
         data:author             "Hengki Sihombing";
         data:url                "https://github.com/hengkiardo/express4-bootstrap-starter";
+        data:download            "https://github.com/hengkiardo/express4-bootstrap-starter/archive/refs/heads/master.zip";
         .
 
 id:30 
@@ -210,6 +239,7 @@ id:30
         data:description        "Simple Vue 2 Starter for single page application with Vuex and Vue Router";
         data:author             "Naufal Rabbani";
         data:url                "https://github.com/BosNaufal/vue2-starter";
+        data:download           "https://github.com/BosNaufal/vue2-starter/archive/refs/heads/master.zip";
         .
 
 id:31 
@@ -217,6 +247,7 @@ id:31
         data:description        "Vue 2 Simple Alert Component (SweetAlert Inspired)";
         data:author             "Irfan Maulana";
         data:url                "https://github.com/mazipan/vue2-simplert";
+        data:download           "https://github.com/mazipan/vue2-simplert/archive/refs/heads/master.zip";
         .
 
 id:32 
@@ -224,6 +255,7 @@ id:32
         data:description        "Vuejs + SoundCloud demo app, for JogjaJS 4th meet up";
         data:author             "Mulia Nasution";
         data:url                "https://github.com/mul14/vue-soundcloud";
+        data:download           "https://github.com/mul14/vue-soundcloud/archive/refs/heads/master.zip";
         .
 
 id:33 
@@ -231,6 +263,7 @@ id:33
         data:description        "Autocomplete Component for VueJS";
         data:author             "Naufal Rabbani";
         data:url                "https://github.com/BosNaufal/vue-autocomplete";
+        data:download           "https://github.com/BosNaufal/vue-autocomplete/archive/refs/heads/master.zip";
         .
 
 id:34 
@@ -238,6 +271,7 @@ id:34
         data:description        "Mini Online Shop Built With VueJS";
         data:author             "Naufal Rabbani";
         data:url                "https://github.com/BosNaufal/vue-mini-shop";
+        data:download            "https://github.com/BosNaufal/vue-mini-shop/archive/refs/heads/master.zip";
         .
 
 id:35 
@@ -245,6 +279,7 @@ id:35
         data:description        "Youtube Like Loading Bar Component for Vue.js";
         data:author             "Naufal Rabbani";
         data:url                "https://github.com/BosNaufal/vue-loading-bar";
+        data:download           "https://github.com/BosNaufal/vue-loading-bar/archive/refs/heads/master.zip";
         .
 
 id:36
@@ -252,12 +287,14 @@ id:36
         data:description        "Makes it easy to work on PHP language";
         data:author             "Harazaki Dev";
         data:url                "https://github.com/Harazaki/PHP-BOOTSTRAP";
+        data:download           "https://github.com/Harazaki/PHP-BOOTSTRAP/archive/refs/heads/master.zip";
         .
 id:37 
         data:title              "Simple Excel PHP";
         data:description        "Easily read parse convert write between Microsoft Excel XML";
         data:author             "Faisal Salman";
         data:url                "https://github.com/faisalman/simple-excel-php";
+        data:download           "https://github.com/faisalman/simple-excel-php/archive/refs/heads/master.zip";
         .
 
 id:38 
@@ -265,6 +302,7 @@ id:38
         data:description        "Example CRUD application with Laravel 5.2";
         data:author             "Rahmat Awaludin";
         data:url                "https://github.com/rawaludin/approcket-preproject";
+        data:download           "https://github.com/rawaludin/approcket-preproject/archive/refs/heads/master.zip";
         .
 
 id:39 
@@ -272,6 +310,7 @@ id:39
         data:description        "Simple file uploader for Laravel 5";
         data:author             "Roni Yusuf Manalu";
         data:url                "https://github.com/rymanalu/laravel-simple-uploader";
+        data:download           "https://github.com/rymanalu/laravel-simple-uploader/archive/refs/heads/master.zip";
         .
 
 id:40 
@@ -279,6 +318,7 @@ id:40
         data:description        "Laravel 5 Model Factory Generator";
         data:author             "Roni Yusuf Manalu";
         data:url                "https://github.com/rymanalu/factory-generator";
+        data:download            "https://github.com/rymanalu/factory-generator/archive/refs/heads/1.0.zip";
         .
 
 id:41 
@@ -286,6 +326,7 @@ id:41
         data:description        "Semantic-UI form helper";
         data:author             "Laravolt";
         data:url                "https://github.com/laravolt/semantic-form";
+        data:download           "https://github.com/laravolt/semantic-form/archive/refs/heads/master.zip";
         .
 
 id:42 
@@ -293,6 +334,7 @@ id:42
         data:description        "Word Graph utility built with NLTK and Text Blob";
         data:author             "Batista Harahap";
         data:url                "https://github.com/tistaharahap/WordGraph";
+        data:download            "https://github.com/tistaharahap/WordGraph/archive/refs/heads/master.zip";
         .
 
 id:43 
@@ -300,6 +342,7 @@ id:43
         data:description        "Using Convolutional Neural Network implemented in TensorFlow";
         data:author             "Bayu Aldi Yansyah";
         data:url                "https://github.com/pyk/hsr";
+        data:download           "https://github.com/pyk/hsr/archive/refs/heads/master.zip";
         .
 
 id:44 
@@ -307,6 +350,7 @@ id:44
         data:description        "High quality stemmer library for Indonesian Language";
         data:author             "Sastrawi";
         data:url                "https://github.com/sastrawi/sastrawi";
+        data:download           "https://github.com/sastrawi/sastrawi/archive/refs/heads/master.zip";
         .
 
 id:45 
@@ -314,6 +358,7 @@ id:45
         data:description        "Python Pentesting Tool";
         data:author             "Jose Manuel Ortega";
         data:url                "https://github.com/jmortega/python-pentesting";
+        data:download           "https://github.com/jmortega/python-pentesting/archive/refs/heads/master.zip";
         .
 
 id:46 
@@ -321,6 +366,7 @@ id:46
         data:description        "Easy to use download tool and API for different types of Firefox builds";
         data:author             "Mozilla";
         data:url                "https://github.com/mozilla/mozdownload";
+        data:download           "https://github.com/mozilla/mozdownload/archive/refs/heads/master.zip";
         .
 
 id:47
@@ -328,6 +374,7 @@ id:47
         data:description        "A Quran reading application for android";
         data:author             "Quran.com";
         data:url                "https://github.com/quran/quran_android";
+        data:download           "https://github.com/quran/quran_android/archive/refs/heads/master.zip";
         .
 
 id:48 
@@ -335,6 +382,7 @@ id:48
         data:description        "Examples of Android applications";
         data:author             "Novoda";
         data:url                "https://github.com/novoda/android-demos";
+        data:download           "https://github.com/novoda/android-demos/archive/refs/heads/master.zip";
         .
 
 id:49 
@@ -342,6 +390,7 @@ id:49
         data:description        "Android image cropping library";
         data:author             "Lyft";
         data:url                "https://github.com/lyft/scissors";
+        data:download           "https://github.com/lyft/scissors/archive/refs/heads/master.zip";
         .
 
 id:50 
@@ -349,6 +398,7 @@ id:50
         data:description        "Android blurring image(bitmap) by java and jni";
         data:author             "Qiujuer";
         data:url                "https://github.com/qiujuer/ImageBlurring";
+        data:download           "https://github.com/qiujuer/ImageBlurring/archive/refs/heads/master.zip";
         .
 
 #Language
