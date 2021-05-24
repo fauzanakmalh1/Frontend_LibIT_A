@@ -82,6 +82,60 @@ export default function Home() {
     }
   };
 
+  const getAllData = async () => {
+    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = "https://qrary-fuseki-service.herokuapp.com/repo-code/query";
+
+    const headers = {
+      'Accept': 'application/sparql-results+json,*/*;q=0.9',
+      'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+    };
+
+    const queryData = {
+      query: `PREFIX data: <https://github.com/repo#>
+      PREFIX id: <https://github.com/akun#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      SELECT ?title ?description ?author ?url ?download ?language ?framework ?year
+      WHERE
+      {
+        ?id data:title ?title ;
+            data:description ?description ;
+            data:author ?author ;
+            data:url ?url ;
+            data:download ?download ;
+            data:hasLanguage ?nameLanguage ;
+            data:hasFramework ?nameFramework ;
+            data:hasYear ?nameYear .
+            
+            ?nameLanguage data:language ?language .
+            ?nameFramework data:framework ?framework .
+            ?nameYear data:year ?year .
+      }`,
+    };
+
+    try {
+      const { data } = await axios(BASE_URL, {
+        method: "POST",
+        headers,
+        data: qs.stringify(queryData),
+      });
+      console.log(data);
+
+      // Convert Data
+      const formatted_data = data.results.bindings.map((code, index) =>
+        formatter(code, index)
+      );
+      console.log(formatted_data);
+
+      setValue({
+        ...value,
+        codes: formatted_data,
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
   const formatter = (codes, index) => {
     return {
       id: index,
@@ -212,7 +266,7 @@ export default function Home() {
                           >
                             <div className="align-items-center justify-content-center">
                               <div className="row">
-                                <div className="col-md-12">
+                                <div className="col-md-8">
                                   <div className="code_form_inputs align-items-center justify-content-center">
                                     <input
                                       type="text"
@@ -224,9 +278,7 @@ export default function Home() {
                                     />
                                   </div>
                                 </div>
-                              </div>
-                              <div className="row">
-                                <div className="col-md-12">
+                                <div className="col-md-4">
                                   <button
                                     type="button"
                                     className="code_form_button button"
@@ -234,6 +286,18 @@ export default function Home() {
                                     onClick={getData}
                                   >
                                     <span>Search</span>
+                                  </button>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col-md-12 mt-4">
+                                  <button
+                                    type="button"
+                                    className="code_form_button button-get-all"
+                                    value="Search"
+                                    onClick={getAllData}
+                                  >
+                                    <span>Show All Data</span>
                                   </button>
                                 </div>
                               </div>
