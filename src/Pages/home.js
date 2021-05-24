@@ -3,26 +3,26 @@ import axios from "axios";
 import qs from "qs";
 
 export default function Home() {
-  
   const [value, setValue] = useState({
     codes: [],
-    title: '',
-    description: '',
-    author: '',
-    url: '',
-    download: '',
-    language: '',
-    framework: '',
-    year: ''
+    title: "",
+    description: "",
+    author: "",
+    url: "",
+    download: "",
+    language: "",
+    framework: "",
+    year: "",
   });
 
   const getData = async () => {
-    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = "http://localhost:3030/repo-code/query";
     // const BASE_URL = "https://qrary-fuseki-service.herokuapp.com/repo-code/query";
+    const BASE_URL = " https://cb8873c5f19f.ngrok.io/repo-code/query";
 
     const headers = {
-      'Accept': 'application/sparql-results+json,*/*;q=0.9',
-      'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+      Accept: "application/sparql-results+json,*/*;q=0.9",
+      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
     };
 
     const queryData = {
@@ -80,72 +80,76 @@ export default function Home() {
     } catch (err) {
       console.error(err);
     }
-  }
+  };
 
   const formatter = (codes, index) => {
     return {
-      "id": index,
-      "title": codes.title.value,
-      "description": codes.description.value,
-      "author": codes.author.value,
-      "url": codes.url.value,
-      "download": codes.download.value,
-      "language": codes.language.value,
-      "framework": codes.framework.value,
-      "year": codes.year.value
-    }
-  }
+      id: index,
+      title: codes.title.value,
+      description: codes.description.value,
+      author: codes.author.value,
+      url: codes.url.value,
+      download: codes.download.value,
+      language: codes.language.value,
+      framework: codes.framework.value,
+      year: codes.year.value,
+    };
+  };
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     setValue({
       ...value,
       input: event.target.value,
     });
-  }
+  };
 
-  const content = value.codes.map((code) =>
-  <div className="codes_list_container text-justify">
-    <ul>
-      <li key={code.id}>
-        <div className="d-flex flex-row align-items-start justify-content-start"></div>
-        <div className="code_info"></div>
-        <div className="code_title">
-          {code.title}
+  const content = value.codes.map((code) => (
+    <div className="codes_list_container text-justify">
+      <ul>
+        <li key={code.id}>
+          <div className="d-flex flex-row align-items-start justify-content-start"></div>
+          <div className="code_info"></div>
+          <div className="code_title">
+            {code.title}
+            <br />
+          </div>
+          <div className="code_language">
+            Language : {code.language}
+            <br />
+          </div>
+          Framework : {code.framework}
           <br />
-        </div>
-        <div className="code_language">
-          Language : {code.language}
+          Year : {code.year}
           <br />
-        </div>
-        Framework : {code.framework}
-        <br />
-        Year : {code.year}
-        <br />
-        Description : {code.description}
-        <br />
-        Author : {code.author}
-        <br />
-        URL :{" "}
-        <a href={code.url} target="_blank" rel="noreferrer">
-          {code.url}
-        </a>
-        <br />
-        <a href={code.download} rel="noreferrer">
-          <button
-            type="button"
-            className="code_form_button button mt-2"
-          >
-            <span><img src="/images/img-download.svg" className="img-download mr-2" alt="Download" />Download Here</span>
-          </button>
-        </a>
-        <br />
-        <hr className="line-style"></hr>
-        <div className="margin-style"></div>
-      </li>
-    </ul>
-    <ul className="codes_list"></ul>
-  </div>
-  )
+          Description : {code.description}
+          <br />
+          Author : {code.author}
+          <br />
+          URL :{" "}
+          <a href={code.url} target="_blank" rel="noreferrer">
+            {code.url}
+          </a>
+          <br />
+          <a href={code.download} rel="noreferrer">
+            <button type="button" className="code_form_button button mt-2">
+              <span>
+                <img
+                  src="/images/img-download.svg"
+                  className="img-download mr-2"
+                  alt="Download"
+                />
+                Download Here
+              </span>
+            </button>
+          </a>
+          <br />
+          <hr className="line-style"></hr>
+          <div className="margin-style"></div>
+        </li>
+      </ul>
+      <ul className="codes_list"></ul>
+    </div>
+  ));
 
   return (
     <div className="super_container">
@@ -278,15 +282,21 @@ export default function Home() {
                     if (content.length === 0) {
                       return (
                         <div>
-                          <img src="/images/img-notfound.svg" className="img-notfound mb-4" alt="Not Found" />
-                          <p className="text-notfound">Sorry we can’t find what  are you  looking for</p>
-                          <p className="text-notfound">Please check your keyword</p>
+                          <img
+                            src="/images/img-notfound.svg"
+                            className="img-notfound mb-4"
+                            alt="Not Found"
+                          />
+                          <p className="text-notfound">
+                            Sorry we can’t find what are you looking for
+                          </p>
+                          <p className="text-notfound">
+                            Please check your keyword
+                          </p>
                         </div>
-                      )
+                      );
                     } else {
-                      return (
-                        <div>{content}</div>
-                        )
+                      return <div>{content}</div>;
                     }
                   })()}
                 </div>
