@@ -83,12 +83,12 @@ export default function Home() {
   };
 
   const getAllData = async () => {
-    const BASE_URL = "http://localhost:3030/repo-code/query";
-    // const BASE_URL = "https://qrary-fuseki-service.herokuapp.com/repo-code/query";
+    // const BASE_URL = "http://localhost:3030/repo-code/query";
+    const BASE_URL = " https://cb8873c5f19f.ngrok.io/repo-code/query";
 
     const headers = {
-      'Accept': 'application/sparql-results+json,*/*;q=0.9',
-      'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+      Accept: "application/sparql-results+json,*/*;q=0.9",
+      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
     };
 
     const queryData = {
@@ -134,7 +134,7 @@ export default function Home() {
     } catch (err) {
       console.error(err);
     }
-  }
+  };
 
   const formatter = (codes, index) => {
     return {
