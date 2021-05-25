@@ -17,7 +17,7 @@ export default function Advanced() {
 
   const getData = async () => {
     // const BASE_URL = "http://localhost:3030/repo-code/query";
-    const BASE_URL = " https://cb8873c5f19f.ngrok.io/repo-code/query";
+    const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
