@@ -16,8 +16,8 @@ export default function Advanced() {
   });
 
   const getData = async () => {
-    // const BASE_URL = "http://localhost:3030/repo-code/query";
-    const BASE_URL = " https://cb8873c5f19f.ngrok.io/repo-code/query";
+    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
@@ -377,7 +377,7 @@ export default function Advanced() {
                     if (content.length === 0) {
                       return (
                         <div>
-                          <img
+                          {/* <img
                             src="/images/img-notfound.svg"
                             className="img-notfound mb-4"
                             alt="Not Found"
@@ -387,7 +387,7 @@ export default function Advanced() {
                           </p>
                           <p className="text-notfound">
                             Please check your keyword
-                          </p>
+                          </p> */}
                         </div>
                       );
                     } else {

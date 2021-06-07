@@ -16,9 +16,8 @@ export default function Home() {
   });
 
   const getData = async () => {
-    // const BASE_URL = "http://localhost:3030/repo-code/query";
-    // const BASE_URL = "https://qrary-fuseki-service.herokuapp.com/repo-code/query";
-    const BASE_URL = " https://cb8873c5f19f.ngrok.io/repo-code/query";
+    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
@@ -83,8 +82,8 @@ export default function Home() {
   };
 
   const getAllData = async () => {
-    // const BASE_URL = "http://localhost:3030/repo-code/query";
-    const BASE_URL = " https://cb8873c5f19f.ngrok.io/repo-code/query";
+    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
@@ -111,6 +110,174 @@ export default function Home() {
             ?nameFramework data:framework ?framework .
             ?nameYear data:year ?year .
       }`,
+    };
+
+    try {
+      const { data } = await axios(BASE_URL, {
+        method: "POST",
+        headers,
+        data: qs.stringify(queryData),
+      });
+      console.log(data);
+
+      // Convert Data
+      const formatted_data = data.results.bindings.map((code, index) =>
+        formatter(code, index)
+      );
+      console.log(formatted_data);
+
+      setValue({
+        ...value,
+        codes: formatted_data,
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const getSortLanguageData = async () => {
+    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+
+    const headers = {
+      Accept: "application/sparql-results+json,*/*;q=0.9",
+      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    };
+
+    const queryData = {
+      query: `PREFIX data: <https://github.com/repo#>
+      PREFIX id: <https://github.com/akun#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      SELECT ?title ?description ?author ?url ?download ?language ?framework ?year
+      WHERE
+      {
+        ?id data:title ?title ;
+            data:description ?description ;
+            data:author ?author ;
+            data:url ?url ;
+            data:download ?download ;
+            data:hasLanguage ?nameLanguage ;
+            data:hasFramework ?nameFramework ;
+            data:hasYear ?nameYear .
+            
+            ?nameLanguage data:language ?language .
+            ?nameFramework data:framework ?framework .
+            ?nameYear data:year ?year .
+
+      }
+      ORDER BY ASC(?nameLanguage)`,
+    };
+
+    try {
+      const { data } = await axios(BASE_URL, {
+        method: "POST",
+        headers,
+        data: qs.stringify(queryData),
+      });
+      console.log(data);
+
+      // Convert Data
+      const formatted_data = data.results.bindings.map((code, index) =>
+        formatter(code, index)
+      );
+      console.log(formatted_data);
+
+      setValue({
+        ...value,
+        codes: formatted_data,
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const getSortFrameworkData = async () => {
+    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+
+    const headers = {
+      Accept: "application/sparql-results+json,*/*;q=0.9",
+      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    };
+
+    const queryData = {
+      query: `PREFIX data: <https://github.com/repo#>
+      PREFIX id: <https://github.com/akun#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      SELECT ?title ?description ?author ?url ?download ?language ?framework ?year
+      WHERE
+      {
+        ?id data:title ?title ;
+            data:description ?description ;
+            data:author ?author ;
+            data:url ?url ;
+            data:download ?download ;
+            data:hasLanguage ?nameLanguage ;
+            data:hasFramework ?nameFramework ;
+            data:hasYear ?nameYear .
+            
+            ?nameLanguage data:language ?language .
+            ?nameFramework data:framework ?framework .
+            ?nameYear data:year ?year .
+
+      }
+      ORDER BY ASC(?nameFramework)`,
+    };
+
+    try {
+      const { data } = await axios(BASE_URL, {
+        method: "POST",
+        headers,
+        data: qs.stringify(queryData),
+      });
+      console.log(data);
+
+      // Convert Data
+      const formatted_data = data.results.bindings.map((code, index) =>
+        formatter(code, index)
+      );
+      console.log(formatted_data);
+
+      setValue({
+        ...value,
+        codes: formatted_data,
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const getSortYearData = async () => {
+    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+
+    const headers = {
+      Accept: "application/sparql-results+json,*/*;q=0.9",
+      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    };
+
+    const queryData = {
+      query: `PREFIX data: <https://github.com/repo#>
+      PREFIX id: <https://github.com/akun#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      SELECT ?title ?description ?author ?url ?download ?language ?framework ?year
+      WHERE
+      {
+        ?id data:title ?title ;
+            data:description ?description ;
+            data:author ?author ;
+            data:url ?url ;
+            data:download ?download ;
+            data:hasLanguage ?nameLanguage ;
+            data:hasFramework ?nameFramework ;
+            data:hasYear ?nameYear .
+            
+            ?nameLanguage data:language ?language .
+            ?nameFramework data:framework ?framework .
+            ?nameYear data:year ?year .
+
+      }
+      ORDER BY ASC(?nameYear)`,
     };
 
     try {
@@ -290,7 +457,7 @@ export default function Home() {
                                 </div>
                               </div>
                               <div className="row">
-                                <div className="col-md-12 mt-4">
+                                <div className="col-md-3 mt-4">
                                   <button
                                     type="button"
                                     className="code_form_button button-get-all"
@@ -298,6 +465,36 @@ export default function Home() {
                                     onClick={getAllData}
                                   >
                                     <span>Show All Data</span>
+                                  </button>
+                                </div>
+                                <div className="col-md-3 mt-4">
+                                  <button
+                                    type="button"
+                                    className="code_form_button button-get-all"
+                                    value="Search"
+                                    onClick={getSortLanguageData}
+                                  >
+                                    <span>Sort By Language</span>
+                                  </button>
+                                </div>
+                                <div className="col-md-3 mt-4">
+                                  <button
+                                    type="button"
+                                    className="code_form_button button-get-all"
+                                    value="Search"
+                                    onClick={getSortFrameworkData}
+                                  >
+                                    <span>Sort By Framework</span>
+                                  </button>
+                                </div>
+                                <div className="col-md-3 mt-4">
+                                  <button
+                                    type="button"
+                                    className="code_form_button button-get-all"
+                                    value="Search"
+                                    onClick={getSortYearData}
+                                  >
+                                    <span>Sort By Year</span>
                                   </button>
                                 </div>
                               </div>
@@ -346,7 +543,7 @@ export default function Home() {
                     if (content.length === 0) {
                       return (
                         <div>
-                          <img
+                          {/* <img
                             src="/images/img-notfound.svg"
                             className="img-notfound mb-4"
                             alt="Not Found"
@@ -356,7 +553,7 @@ export default function Home() {
                           </p>
                           <p className="text-notfound">
                             Please check your keyword
-                          </p>
+                          </p> */}
                         </div>
                       );
                     } else {
