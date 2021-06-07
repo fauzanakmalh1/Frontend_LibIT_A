@@ -361,7 +361,7 @@ export default function Advanced() {
                 <div className="extra_title_container">
                   <div className="extra_year">2021</div>
                   <div className="extra_title">Result</div>
-                  <div className="extra_subtitle">Repositories</div>
+                  <div className="extra_subtitle">Repository</div>
                 </div>
               </div>
             </div>
