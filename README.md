@@ -61,6 +61,5 @@ Projek ini dibangun dengan menggunakan React JS beserta *library* terkait untuk 
 ## Screenshot Website
 <img src="https://github.com/fauzanakmalh1/LibIT_A/blob/master/public/images/screenshot-web.png" alt="Screenshot Website">
 <img src="https://github.com/fauzanakmalh1/LibIT_A/blob/master/public/images/screenshot-mobile.png" alt="Screenshot Website Mobile">
- ---
 
  >Copyright &copy; 2021 - LibIT!
