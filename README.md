@@ -1,11 +1,13 @@
 # LibIT_A
 ---
+
+Repository Projek Mata Kuliah Semantik Web : **Aplikasi Pencarian Source code dengan menggunakan SPARQL**
+Projek ini dibangun dengan menggunakan React JS beserta *library* terkait untuk menunjang berjalannya fitur *website* ini.
+
+---
 ## Anggota
 - 140810180005 - Fauzan Akmal Hariz
 - 140810180013 - Alvin
----
-Repository Projek Mata Kuliah Semantik Web : **Aplikasi Pencarian Source code dengan menggunakan SPARQL**
-Projek ini dibangun dengan menggunakan React JS beserta *library* terkait untuk menunjang berjalannya fitur *website* ini.
 ---
 ## Panduan Instalasi
 ### Apache Jena Fuseki
@@ -60,4 +62,5 @@ Projek ini dibangun dengan menggunakan React JS beserta *library* terkait untuk 
 <img src="https://github.com/fauzanakmalh1/LibIT_A/blob/master/public/images/screenshot-web.png" alt="Screenshot Website">
 <img src="https://github.com/fauzanakmalh1/LibIT_A/blob/master/public/images/screenshot-mobile.png" alt="Screenshot Website Mobile">
  ---
+
  >Copyright &copy; 2021 - LibIT!
