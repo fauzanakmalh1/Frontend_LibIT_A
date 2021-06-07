@@ -377,17 +377,14 @@ export default function Advanced() {
                     if (content.length === 0) {
                       return (
                         <div>
-                          {/* <img
-                            src="/images/img-notfound.svg"
+                          <img
+                            src="/images/img-search.svg"
                             className="img-notfound mb-4"
-                            alt="Not Found"
+                            alt="Waiting to Search"
                           />
                           <p className="text-notfound">
-                            Sorry we can’t find what are you looking for
+                            Waiting to Search! Please Input Keyword to Search Repository
                           </p>
-                          <p className="text-notfound">
-                            Please check your keyword
-                          </p> */}
                         </div>
                       );
                     } else {
