@@ -1,6 +1,6 @@
 import React, {} from "react";
 
-export default function About() {
+function About() {
   
   return (
     <div className="super_container">
@@ -21,10 +21,10 @@ export default function About() {
                 <div className="ml-auto">
                 <div className="d-flex flex-row align-items-end justify-content-end">
                     <span className="nav_about_text">
-                      <a href="/Advanced">Advanced</a>
+                      <a href="/advanced">Advanced</a>
                     </span>
                     <span className="nav_about_text active ml-4">
-                      <a href="/About">About</a>
+                      <a href="/about">About</a>
                     </span>
                   </div>
                 </div>
@@ -148,3 +148,5 @@ export default function About() {
     </div>
   );
 }
+
+export default About;

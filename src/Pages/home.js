@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import qs from "qs";
 
-export default function Home() {
+function Home() {
   const [value, setValue] = useState({
     codes: [],
     title: "",
@@ -316,6 +316,11 @@ export default function Home() {
     </div>
   ));
 
+  useEffect(() => {
+    getAllData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div className="super_container">
       {/* Header */}
@@ -335,10 +340,10 @@ export default function Home() {
                 <div className="ml-auto">
                   <div className="d-flex flex-row align-items-end justify-content-end">
                     <span className="nav_about_text">
-                      <a href="/Advanced">Advanced</a>
+                      <a href="/advanced">Advanced</a>
                     </span>
                     <span className="nav_about_text ml-4">
-                      <a href="/About">About</a>
+                      <a href="/about">About</a>
                     </span>
                   </div>
                 </div>
@@ -428,7 +433,7 @@ export default function Home() {
                                     value="Search"
                                     onClick={getSortYearData}
                                   >
-                                    <span>Show By Year</span>
+                                    <span>Show New Repository</span>
                                   </button>
                                 </div>
                               </div>
@@ -483,7 +488,7 @@ export default function Home() {
                             alt="Waiting to Search"
                           />
                           <p className="text-notfound">
-                            Waiting to Search! Please Input Keyword to Search Repository
+                            Waiting to Search! Please Input Keyword Appropriately to Search Repository
                           </p>
                         </div>
                       );
@@ -534,3 +539,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

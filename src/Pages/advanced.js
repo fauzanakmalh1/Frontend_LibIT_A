@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import qs from "qs";
 
-export default function Advanced() {
+function Advanced() {
   const [value, setValue] = useState({
     codes: [],
     title: "",
@@ -210,10 +210,10 @@ export default function Advanced() {
                 <div className="ml-auto">
                   <div className="d-flex flex-row align-items-end justify-content-end">
                     <span className="nav_about_text active">
-                      <a href="/Advanced">Advanced</a>
+                      <a href="/advanced">Advanced</a>
                     </span>
                     <span className="nav_about_text ml-4">
-                      <a href="/About">About</a>
+                      <a href="/about">About</a>
                     </span>
                   </div>
                 </div>
@@ -383,7 +383,7 @@ export default function Advanced() {
                             alt="Waiting to Search"
                           />
                           <p className="text-notfound">
-                            Waiting to Search! Please Input Keyword to Search Repository
+                            Waiting to Search! Please Input Keyword Appropriately to Search Repository
                           </p>
                         </div>
                       );
@@ -434,3 +434,5 @@ export default function Advanced() {
     </div>
   );
 }
+
+export default Advanced;
