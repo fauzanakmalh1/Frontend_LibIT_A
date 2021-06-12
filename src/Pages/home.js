@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import qs from "qs";
 
-export default function Home() {
+function Home() {
   const [value, setValue] = useState({
     codes: [],
     title: "",
@@ -16,8 +16,13 @@ export default function Home() {
   });
 
   const getData = async () => {
+<<<<<<< HEAD
     // const BASE_URL = "http://localhost:3030/repo-code/query";
     const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+=======
+    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+>>>>>>> edcd3dade3f50ff2074512bbb16283d40c9e410c
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
@@ -82,8 +87,13 @@ export default function Home() {
   };
 
   const getAllData = async () => {
+<<<<<<< HEAD
     // const BASE_URL = "http://localhost:3030/repo-code/query";
     const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+=======
+    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+>>>>>>> edcd3dade3f50ff2074512bbb16283d40c9e410c
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
@@ -110,6 +120,118 @@ export default function Home() {
             ?nameFramework data:framework ?framework .
             ?nameYear data:year ?year .
       }`,
+    };
+
+    try {
+      const { data } = await axios(BASE_URL, {
+        method: "POST",
+        headers,
+        data: qs.stringify(queryData),
+      });
+      console.log(data);
+
+      // Convert Data
+      const formatted_data = data.results.bindings.map((code, index) =>
+        formatter(code, index)
+      );
+      console.log(formatted_data);
+
+      setValue({
+        ...value,
+        codes: formatted_data,
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const getTopRepoData = async () => {
+    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+
+    const headers = {
+      Accept: "application/sparql-results+json,*/*;q=0.9",
+      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    };
+
+    const queryData = {
+      query: `PREFIX data: <https://github.com/repo#>
+      PREFIX id: <https://github.com/akun#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      SELECT ?title ?description ?author ?url ?download ?language ?framework ?year
+      WHERE
+      {
+        ?id data:title ?title ;
+            data:description ?description ;
+            data:author ?author ;
+            data:url ?url ;
+            data:download ?download ;
+            data:hasLanguage ?nameLanguage ;
+            data:hasFramework ?nameFramework ;
+            data:hasYear ?nameYear .
+            
+            ?nameLanguage data:language ?language .
+            ?nameFramework data:framework ?framework .
+            ?nameYear data:year ?year .
+      }
+      ORDER BY RAND()
+      LIMIT 10`,
+    };
+
+    try {
+      const { data } = await axios(BASE_URL, {
+        method: "POST",
+        headers,
+        data: qs.stringify(queryData),
+      });
+      console.log(data);
+
+      // Convert Data
+      const formatted_data = data.results.bindings.map((code, index) =>
+        formatter(code, index)
+      );
+      console.log(formatted_data);
+
+      setValue({
+        ...value,
+        codes: formatted_data,
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const getSortYearData = async () => {
+    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+
+    const headers = {
+      Accept: "application/sparql-results+json,*/*;q=0.9",
+      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    };
+
+    const queryData = {
+      query: `PREFIX data: <https://github.com/repo#>
+      PREFIX id: <https://github.com/akun#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      SELECT ?title ?description ?author ?url ?download ?language ?framework ?year
+      WHERE
+      {
+        ?id data:title ?title ;
+            data:description ?description ;
+            data:author ?author ;
+            data:url ?url ;
+            data:download ?download ;
+            data:hasLanguage ?nameLanguage ;
+            data:hasFramework ?nameFramework ;
+            data:hasYear ?nameYear .
+            
+            ?nameLanguage data:language ?language .
+            ?nameFramework data:framework ?framework .
+            ?nameYear data:year ?year .
+
+      }
+      ORDER BY DESC(?nameYear)`,
     };
 
     try {
@@ -204,6 +326,11 @@ export default function Home() {
     </div>
   ));
 
+  useEffect(() => {
+    getAllData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div className="super_container">
       {/* Header */}
@@ -223,10 +350,10 @@ export default function Home() {
                 <div className="ml-auto">
                   <div className="d-flex flex-row align-items-end justify-content-end">
                     <span className="nav_about_text">
-                      <a href="/Advanced">Advanced</a>
+                      <a href="/advanced">Advanced</a>
                     </span>
                     <span className="nav_about_text ml-4">
-                      <a href="/About">About</a>
+                      <a href="/about">About</a>
                     </span>
                   </div>
                 </div>
@@ -289,7 +416,7 @@ export default function Home() {
                                 </div>
                               </div>
                               <div className="row">
-                                <div className="col-md-12 mt-4">
+                                <div className="col-md-4 mt-4">
                                   <button
                                     type="button"
                                     className="code_form_button button-get-all"
@@ -297,6 +424,26 @@ export default function Home() {
                                     onClick={getAllData}
                                   >
                                     <span>Show All Data</span>
+                                  </button>
+                                </div>
+                                <div className="col-md-4 mt-4">
+                                  <button
+                                    type="button"
+                                    className="code_form_button button-get-all"
+                                    value="Search"
+                                    onClick={getTopRepoData}
+                                  >
+                                    <span>Show Top Repository</span>
+                                  </button>
+                                </div>
+                                <div className="col-md-4 mt-4">
+                                  <button
+                                    type="button"
+                                    className="code_form_button button-get-all"
+                                    value="Search"
+                                    onClick={getSortYearData}
+                                  >
+                                    <span>Show New Repository</span>
                                   </button>
                                 </div>
                               </div>
@@ -329,7 +476,7 @@ export default function Home() {
                 <div className="extra_title_container">
                   <div className="extra_year">2021</div>
                   <div className="extra_title">Result</div>
-                  <div className="extra_subtitle">Repositories</div>
+                  <div className="extra_subtitle">Repository</div>
                 </div>
               </div>
             </div>
@@ -346,15 +493,12 @@ export default function Home() {
                       return (
                         <div>
                           <img
-                            src="/images/img-notfound.svg"
+                            src="/images/img-search.svg"
                             className="img-notfound mb-4"
-                            alt="Not Found"
+                            alt="Waiting to Search"
                           />
                           <p className="text-notfound">
-                            Sorry we can’t find what are you looking for
-                          </p>
-                          <p className="text-notfound">
-                            Please check your keyword
+                            Waiting to Search! Please Input Keyword Appropriately to Search Repository
                           </p>
                         </div>
                       );
@@ -405,3 +549,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

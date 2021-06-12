@@ -5,9 +5,9 @@ import "./styles/responsive.css";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Home from "./Pages/home";
-import Advanced from "./Pages/advanced";
-import About from "./Pages/about";
+import Home from "./Pages/Home";
+import Advanced from "./Pages/Advanced";
+import About from "./Pages/About";
 
 function App() {
   

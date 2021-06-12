@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import qs from "qs";
 
-export default function Advanced() {
+function Advanced() {
   const [value, setValue] = useState({
     codes: [],
     title: "",
@@ -16,8 +16,13 @@ export default function Advanced() {
   });
 
   const getData = async () => {
+<<<<<<< HEAD
     // const BASE_URL = "http://localhost:3030/repo-code/query";
     const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+=======
+    const BASE_URL = "http://localhost:3030/repo-code/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+>>>>>>> edcd3dade3f50ff2074512bbb16283d40c9e410c
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
@@ -210,10 +215,10 @@ export default function Advanced() {
                 <div className="ml-auto">
                   <div className="d-flex flex-row align-items-end justify-content-end">
                     <span className="nav_about_text active">
-                      <a href="/Advanced">Advanced</a>
+                      <a href="/advanced">Advanced</a>
                     </span>
                     <span className="nav_about_text ml-4">
-                      <a href="/About">About</a>
+                      <a href="/about">About</a>
                     </span>
                   </div>
                 </div>
@@ -361,7 +366,7 @@ export default function Advanced() {
                 <div className="extra_title_container">
                   <div className="extra_year">2021</div>
                   <div className="extra_title">Result</div>
-                  <div className="extra_subtitle">Repositories</div>
+                  <div className="extra_subtitle">Repository</div>
                 </div>
               </div>
             </div>
@@ -378,15 +383,12 @@ export default function Advanced() {
                       return (
                         <div>
                           <img
-                            src="/images/img-notfound.svg"
+                            src="/images/img-search.svg"
                             className="img-notfound mb-4"
-                            alt="Not Found"
+                            alt="Waiting to Search"
                           />
                           <p className="text-notfound">
-                            Sorry we can’t find what are you looking for
-                          </p>
-                          <p className="text-notfound">
-                            Please check your keyword
+                            Waiting to Search! Please Input Keyword Appropriately to Search Repository
                           </p>
                         </div>
                       );
@@ -437,3 +439,5 @@ export default function Advanced() {
     </div>
   );
 }
+
+export default Advanced;

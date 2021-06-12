@@ -401,6 +401,65 @@ id:50
         data:download           "https://github.com/qiujuer/ImageBlurring/archive/refs/heads/master.zip";
         .
 
+#Category
+id:C1 data:category "Mobile Development" .
+id:C2 data:category "Web Development" .
+id:C3 data:category "Tools Development" .
+
+
+#Relasi category
+id:1 data:hasCategory id:C1 .
+id:2 data:hasCategory id:C1 .
+id:3 data:hasCategory id:C1 .
+id:4 data:hasCategory id:C2 .
+id:5 data:hasCategory id:C1 .
+id:6 data:hasCategory id:C1 .
+id:7 data:hasCategory id:C1 .
+id:8 data:hasCategory id:C1 .
+id:9 data:hasCategory id:C1 .
+id:10 data:hasCategory id:C3 .
+id:11 data:hasCategory id:C3 .
+id:12 data:hasCategory id:C3 .
+id:13 data:hasCategory id:C3 .
+id:14 data:hasCategory id:C2 .
+id:15 data:hasCategory id:C2 .
+id:16 data:hasCategory id:C2 .
+id:17 data:hasCategory id:C2 .
+id:18 data:hasCategory id:C2 .
+id:19 data:hasCategory id:C2 .
+id:20 data:hasCategory id:C3 .
+id:21 data:hasCategory id:C3 .
+id:22 data:hasCategory id:C3 .
+id:23 data:hasCategory id:C3 .
+id:24 data:hasCategory id:C3 .
+id:25 data:hasCategory id:C3 .
+id:26 data:hasCategory id:C2 .
+id:27 data:hasCategory id:C2 .
+id:28 data:hasCategory id:C2 .
+id:29 data:hasCategory id:C2 .
+id:30 data:hasCategory id:C2 .
+id:31 data:hasCategory id:C2 .
+id:32 data:hasCategory id:C2 .
+id:33 data:hasCategory id:C3 .
+id:34 data:hasCategory id:C2 .
+id:35 data:hasCategory id:C2 .
+id:36 data:hasCategory id:C3 .
+id:37 data:hasCategory id:C3 .
+id:38 data:hasCategory id:C2 .
+id:39 data:hasCategory id:C2 .
+id:40 data:hasCategory id:C3 .
+id:41 data:hasCategory id:C3 .
+id:42 data:hasCategory id:C3 .
+id:43 data:hasCategory id:C3 .
+id:44 data:hasCategory id:C3 .
+id:45 data:hasCategory id:C3 .
+id:46 data:hasCategory id:C3 .
+id:47 data:hasCategory id:C1 .
+id:48 data:hasCategory id:C1 .
+id:49 data:hasCategory id:C1 .
+id:50 data:hasCategory id:C1 .
+
+
 #Language
 id:L1 data:language "Java" .
 id:L2 data:language "Kotlin" .
