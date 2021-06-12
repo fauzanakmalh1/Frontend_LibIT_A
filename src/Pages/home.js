@@ -16,8 +16,8 @@ function Home() {
   });
 
   const getData = async () => {
-    const BASE_URL = "http://localhost:3030/repo-code/query";
-    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+    const BASE_URL = "http://localhost:3030/repo-codes/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-codes/query";
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
@@ -28,7 +28,7 @@ function Home() {
       query: `PREFIX data: <https://github.com/repo#>
       PREFIX id: <https://github.com/akun#>
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-      SELECT ?title ?description ?author ?url ?download ?language ?framework ?year
+      SELECT ?title ?description ?author ?url ?download ?category ?language ?framework ?year
       WHERE
       {
         ?id data:title ?title ;
@@ -36,10 +36,12 @@ function Home() {
             data:author ?author ;
             data:url ?url ;
             data:download ?download ;
+            data:hasCategory ?nameCategory ;
             data:hasLanguage ?nameLanguage ;
             data:hasFramework ?nameFramework ;
             data:hasYear ?nameYear .
             
+            ?nameCategory data:category ?category .
             ?nameLanguage data:language ?language .
             ?nameFramework data:framework ?framework .
             ?nameYear data:year ?year .
@@ -82,8 +84,8 @@ function Home() {
   };
 
   const getAllData = async () => {
-    const BASE_URL = "http://localhost:3030/repo-code/query";
-    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+    const BASE_URL = "http://localhost:3030/repo-codes/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-codes/query";
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
@@ -94,7 +96,7 @@ function Home() {
       query: `PREFIX data: <https://github.com/repo#>
       PREFIX id: <https://github.com/akun#>
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-      SELECT ?title ?description ?author ?url ?download ?language ?framework ?year
+      SELECT ?title ?description ?author ?url ?download ?category ?language ?framework ?year
       WHERE
       {
         ?id data:title ?title ;
@@ -102,10 +104,12 @@ function Home() {
             data:author ?author ;
             data:url ?url ;
             data:download ?download ;
+            data:hasCategory ?nameCategory ;
             data:hasLanguage ?nameLanguage ;
             data:hasFramework ?nameFramework ;
             data:hasYear ?nameYear .
             
+            ?nameCategory data:category ?category .
             ?nameLanguage data:language ?language .
             ?nameFramework data:framework ?framework .
             ?nameYear data:year ?year .
@@ -136,8 +140,8 @@ function Home() {
   };
 
   const getTopRepoData = async () => {
-    const BASE_URL = "http://localhost:3030/repo-code/query";
-    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+    const BASE_URL = "http://localhost:3030/repo-codes/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-codes/query";
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
@@ -148,7 +152,7 @@ function Home() {
       query: `PREFIX data: <https://github.com/repo#>
       PREFIX id: <https://github.com/akun#>
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-      SELECT ?title ?description ?author ?url ?download ?language ?framework ?year
+      SELECT ?title ?description ?author ?url ?download ?category ?language ?framework ?year
       WHERE
       {
         ?id data:title ?title ;
@@ -156,10 +160,12 @@ function Home() {
             data:author ?author ;
             data:url ?url ;
             data:download ?download ;
+            data:hasCategory ?nameCategory ;
             data:hasLanguage ?nameLanguage ;
             data:hasFramework ?nameFramework ;
             data:hasYear ?nameYear .
             
+            ?nameCategory data:category ?category .
             ?nameLanguage data:language ?language .
             ?nameFramework data:framework ?framework .
             ?nameYear data:year ?year .
@@ -192,8 +198,8 @@ function Home() {
   };
 
   const getSortYearData = async () => {
-    const BASE_URL = "http://localhost:3030/repo-code/query";
-    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+    const BASE_URL = "http://localhost:3030/repo-codes/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-codes/query";
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
@@ -204,7 +210,7 @@ function Home() {
       query: `PREFIX data: <https://github.com/repo#>
       PREFIX id: <https://github.com/akun#>
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-      SELECT ?title ?description ?author ?url ?download ?language ?framework ?year
+      SELECT ?title ?description ?author ?url ?download ?category ?language ?framework ?year
       WHERE
       {
         ?id data:title ?title ;
@@ -212,16 +218,195 @@ function Home() {
             data:author ?author ;
             data:url ?url ;
             data:download ?download ;
+            data:hasCategory ?nameCategory ;
             data:hasLanguage ?nameLanguage ;
             data:hasFramework ?nameFramework ;
             data:hasYear ?nameYear .
             
+            ?nameCategory data:category ?category .
             ?nameLanguage data:language ?language .
             ?nameFramework data:framework ?framework .
             ?nameYear data:year ?year .
 
       }
       ORDER BY DESC(?nameYear)`,
+    };
+
+    try {
+      const { data } = await axios(BASE_URL, {
+        method: "POST",
+        headers,
+        data: qs.stringify(queryData),
+      });
+      console.log(data);
+
+      // Convert Data
+      const formatted_data = data.results.bindings.map((code, index) =>
+        formatter(code, index)
+      );
+      console.log(formatted_data);
+
+      setValue({
+        ...value,
+        codes: formatted_data,
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const getMobileData = async () => {
+    const BASE_URL = "http://localhost:3030/repo-codes/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-codes/query";
+
+    const headers = {
+      Accept: "application/sparql-results+json,*/*;q=0.9",
+      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    };
+
+    const queryData = {
+      query: `PREFIX data: <https://github.com/repo#>
+      PREFIX id: <https://github.com/akun#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      SELECT ?title ?description ?author ?url ?download ?category ?language ?framework ?year
+      WHERE
+      {
+        ?id data:title ?title ;
+            data:description ?description ;
+            data:author ?author ;
+            data:url ?url ;
+            data:download ?download ;
+            data:hasCategory ?nameCategory ;
+            data:hasLanguage ?nameLanguage ;
+            data:hasFramework ?nameFramework ;
+            data:hasYear ?nameYear .
+            
+            ?nameCategory data:category ?category .
+            ?nameLanguage data:language ?language .
+            ?nameFramework data:framework ?framework .
+            ?nameYear data:year ?year .
+
+            FILTER (?category = 'Mobile Development')
+      }
+      ORDER BY RAND()`,
+    };
+
+    try {
+      const { data } = await axios(BASE_URL, {
+        method: "POST",
+        headers,
+        data: qs.stringify(queryData),
+      });
+      console.log(data);
+
+      // Convert Data
+      const formatted_data = data.results.bindings.map((code, index) =>
+        formatter(code, index)
+      );
+      console.log(formatted_data);
+
+      setValue({
+        ...value,
+        codes: formatted_data,
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const getWebData = async () => {
+    const BASE_URL = "http://localhost:3030/repo-codes/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-codes/query";
+
+    const headers = {
+      Accept: "application/sparql-results+json,*/*;q=0.9",
+      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    };
+
+    const queryData = {
+      query: `PREFIX data: <https://github.com/repo#>
+      PREFIX id: <https://github.com/akun#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      SELECT ?title ?description ?author ?url ?download ?category ?language ?framework ?year
+      WHERE
+      {
+        ?id data:title ?title ;
+            data:description ?description ;
+            data:author ?author ;
+            data:url ?url ;
+            data:download ?download ;
+            data:hasCategory ?nameCategory ;
+            data:hasLanguage ?nameLanguage ;
+            data:hasFramework ?nameFramework ;
+            data:hasYear ?nameYear .
+            
+            ?nameCategory data:category ?category .
+            ?nameLanguage data:language ?language .
+            ?nameFramework data:framework ?framework .
+            ?nameYear data:year ?year .
+
+            FILTER (?category = 'Web Development')
+      }
+      ORDER BY RAND()`,
+    };
+
+    try {
+      const { data } = await axios(BASE_URL, {
+        method: "POST",
+        headers,
+        data: qs.stringify(queryData),
+      });
+      console.log(data);
+
+      // Convert Data
+      const formatted_data = data.results.bindings.map((code, index) =>
+        formatter(code, index)
+      );
+      console.log(formatted_data);
+
+      setValue({
+        ...value,
+        codes: formatted_data,
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const getToolsData = async () => {
+    const BASE_URL = "http://localhost:3030/repo-codes/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-codes/query";
+
+    const headers = {
+      Accept: "application/sparql-results+json,*/*;q=0.9",
+      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    };
+
+    const queryData = {
+      query: `PREFIX data: <https://github.com/repo#>
+      PREFIX id: <https://github.com/akun#>
+      PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      SELECT ?title ?description ?author ?url ?download ?category ?language ?framework ?year
+      WHERE
+      {
+        ?id data:title ?title ;
+            data:description ?description ;
+            data:author ?author ;
+            data:url ?url ;
+            data:download ?download ;
+            data:hasCategory ?nameCategory ;
+            data:hasLanguage ?nameLanguage ;
+            data:hasFramework ?nameFramework ;
+            data:hasYear ?nameYear .
+            
+            ?nameCategory data:category ?category .
+            ?nameLanguage data:language ?language .
+            ?nameFramework data:framework ?framework .
+            ?nameYear data:year ?year .
+
+            FILTER (?category = 'Tools Development')
+      }
+      ORDER BY RAND()`,
     };
 
     try {
@@ -255,6 +440,7 @@ function Home() {
       author: codes.author.value,
       url: codes.url.value,
       download: codes.download.value,
+      category: codes.category.value,
       language: codes.language.value,
       framework: codes.framework.value,
       year: codes.year.value,
@@ -279,9 +465,11 @@ function Home() {
             <br />
           </div>
           <div className="code_language">
-            Language : {code.language}
+            Category : {code.category}
             <br />
           </div>
+          Language : {code.language}
+          <br />
           Framework : {code.framework}
           <br />
           Year : {code.year}
@@ -406,17 +594,7 @@ function Home() {
                                 </div>
                               </div>
                               <div className="row">
-                                <div className="col-md-4 mt-4">
-                                  <button
-                                    type="button"
-                                    className="code_form_button button-get-all"
-                                    value="Search"
-                                    onClick={getAllData}
-                                  >
-                                    <span>Show All Data</span>
-                                  </button>
-                                </div>
-                                <div className="col-md-4 mt-4">
+                                <div className="col-6 mt-4">
                                   <button
                                     type="button"
                                     className="code_form_button button-get-all"
@@ -426,7 +604,7 @@ function Home() {
                                     <span>Show Top Repository</span>
                                   </button>
                                 </div>
-                                <div className="col-md-4 mt-4">
+                                <div className="col-6 mt-4">
                                   <button
                                     type="button"
                                     className="code_form_button button-get-all"
@@ -434,6 +612,43 @@ function Home() {
                                     onClick={getSortYearData}
                                   >
                                     <span>Show New Repository</span>
+                                  </button>
+                                </div>
+                              </div>
+                              <div className="row mt-4 justify-content-center">
+                                <div className="col-md-12 mt-4">
+                                  <p className="category_text">Are You a Beginner? Choose One of The Following Categories</p>
+                                </div>
+                              </div>
+                              <div className="row mt-2">
+                                <div className="col-6 col-md-4 mt-4">
+                                  <button
+                                    type="button"
+                                    className="code_form_button button-get-category"
+                                    value="Search"
+                                    onClick={getMobileData}
+                                  >
+                                    <span>Mobile Development</span>
+                                  </button>
+                                </div>
+                                <div className="col-6 col-md-4 mt-4">
+                                  <button
+                                    type="button"
+                                    className="code_form_button button-get-category"
+                                    value="Search"
+                                    onClick={getWebData}
+                                  >
+                                    <span>Web Development</span>
+                                  </button>
+                                </div>
+                                <div className="col-md-4 mt-4">
+                                  <button
+                                    type="button"
+                                    className="code_form_button button-get-category"
+                                    value="Search"
+                                    onClick={getToolsData}
+                                  >
+                                    <span>Tools Development</span>
                                   </button>
                                 </div>
                               </div>

@@ -24,7 +24,7 @@ Projek ini dibangun dengan menggunakan React JS beserta *library* terkait untuk 
 1. Jalankan **fuseki-server**
 2. Buka *browser* dan http://localhost:3030/
 3. Klik *manage dataset*, lalu buat *dataset* baru
-4. Masukkan *dataset name* = **repo-code**
+4. Masukkan *dataset name* = **repo-codes**
 5. *Create dataset*
 6. Upload data dari folder *dataset*, pilih **datasetv2.ttl**
 7. Tunggu sampai file selesai di-*upload*

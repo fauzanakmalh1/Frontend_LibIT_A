@@ -396,6 +396,12 @@ section {
 	left: 0;
 }
 
+.button-get-all:focus::after {
+	background-color: #8F5122;
+	background: #8F5122;
+	left: 0;
+}
+
 .button-get-all a {
 	position: relative;
 	font-size: 14px;
@@ -407,6 +413,70 @@ section {
 }
 
 .button-get-all span {
+	position: relative;
+	font-size: 14px;
+	font-weight: 700;
+	color: #FFF;
+	line-height: 56px;
+	text-transform: uppercase;
+	z-index: 1;
+}
+
+.button-get-category {
+	position: relative;
+	overflow: hidden;
+	width: 200px;
+	height: 56px;
+	border-radius: 22px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+.button-get-category::after {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 200%;
+	height: 100%;
+	background-color: #8F5122;
+	/* background-image: linear-gradient(to right, #229BA8, #8F5122, #229BA8); */
+	background: #8F5122;
+	/* background: linear-gradient(to right, #229BA8, #8F5122, #229BA8); */
+	content: '';
+	z-index: 0;
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+
+.button-get-category:hover::after {
+	background-color: #229BA8;
+	background: #229BA8;
+	left: 0;
+}
+
+.button-get-category:focus::after {
+	background-color: #229BA8;
+	background: #229BA8;
+	left: 0;
+}
+
+.button-get-category a {
+	position: relative;
+	font-size: 14px;
+	font-weight: 700;
+	color: #FFF;
+	text-transform: uppercase;
+	z-index: 1;
+	line-height: 56px;
+}
+
+.button-get-category span {
 	position: relative;
 	font-size: 14px;
 	font-weight: 700;
@@ -2045,4 +2115,22 @@ hr.line-style {
 
 .img-download {
 	width: 10%;
+}
+
+.category_text {
+	line-height: 0.75;
+	font-size: 24px;
+	font-weight: 600;
+	color: #FFF;
+}
+
+@media only screen and (max-width: 768px) {
+	.category_text {
+		line-height: 0.5;
+		font-size: 12px;
+		font-weight: 600;
+		color: #FFF;
+		margin: 0;
+		padding: 0;
+	}
 }

@@ -16,8 +16,8 @@ function Advanced() {
   });
 
   const getData = async () => {
-    const BASE_URL = "http://localhost:3030/repo-code/query";
-    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
+    const BASE_URL = "http://localhost:3030/repo-codes/query";
+    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-codes/query";
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
@@ -28,7 +28,7 @@ function Advanced() {
       query: `PREFIX data: <https://github.com/repo#>
       PREFIX id: <https://github.com/akun#>
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-      SELECT ?title ?description ?author ?url ?download ?language ?framework ?year
+      SELECT ?title ?description ?author ?url ?download ?category ?language ?framework ?year
       WHERE
       {
         ?id data:title ?title ;
@@ -36,10 +36,12 @@ function Advanced() {
             data:author ?author ;
             data:url ?url ;
             data:download ?download ;
+            data:hasCategory ?nameCategory ;
             data:hasLanguage ?nameLanguage ;
             data:hasFramework ?nameFramework ;
             data:hasYear ?nameYear .
             
+            ?nameCategory data:category ?category .
             ?nameLanguage data:language ?language .
             ?nameFramework data:framework ?framework .
             ?nameYear data:year ?year .
@@ -58,6 +60,9 @@ function Advanced() {
             }")))
             FILTER contains(lcase(str(?download)), lcase(str("${
               value.download ? value.download : ""
+            }")))
+            FILTER contains(lcase(str(?category)), lcase(str("${
+              value.category ? value.category : ""
             }")))
             FILTER contains(lcase(str(?language)), lcase(str("${
               value.language ? value.language : ""
@@ -102,6 +107,7 @@ function Advanced() {
       author: codes.author.value,
       url: codes.url.value,
       download: codes.download.value,
+      category: codes.category.value,
       language: codes.language.value,
       framework: codes.framework.value,
       year: codes.year.value,
@@ -154,9 +160,11 @@ function Advanced() {
             <br />
           </div>
           <div className="code_language">
-            Language : {code.language}
+            Category : {code.category}
             <br />
           </div>
+          Language : {code.language}
+          <br />
           Framework : {code.framework}
           <br />
           Year : {code.year}
