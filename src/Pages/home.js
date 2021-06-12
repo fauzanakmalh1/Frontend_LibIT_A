@@ -16,13 +16,8 @@ function Home() {
   });
 
   const getData = async () => {
-<<<<<<< HEAD
-    // const BASE_URL = "http://localhost:3030/repo-code/query";
-    const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
-=======
     const BASE_URL = "http://localhost:3030/repo-code/query";
-    // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
->>>>>>> edcd3dade3f50ff2074512bbb16283d40c9e410c
+    //const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
@@ -87,13 +82,8 @@ function Home() {
   };
 
   const getAllData = async () => {
-<<<<<<< HEAD
-    // const BASE_URL = "http://localhost:3030/repo-code/query";
-    const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
-=======
     const BASE_URL = "http://localhost:3030/repo-code/query";
     // const BASE_URL = " https://ac54febc2a77.ngrok.io/repo-code/query";
->>>>>>> edcd3dade3f50ff2074512bbb16283d40c9e410c
 
     const headers = {
       Accept: "application/sparql-results+json,*/*;q=0.9",
@@ -498,7 +488,8 @@ function Home() {
                             alt="Waiting to Search"
                           />
                           <p className="text-notfound">
-                            Waiting to Search! Please Input Keyword Appropriately to Search Repository
+                            Waiting to Search! Please Input Keyword
+                            Appropriately to Search Repository
                           </p>
                         </div>
                       );
