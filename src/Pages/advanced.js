@@ -391,7 +391,8 @@ function Advanced() {
                             alt="Waiting to Search"
                           />
                           <p className="text-notfound">
-                            Waiting to Search! Please Input Keyword Appropriately to Search Repository
+                            Waiting to Search! Please Input Keyword
+                            Appropriately to Search Repository
                           </p>
                         </div>
                       );
