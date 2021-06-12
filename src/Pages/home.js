@@ -53,6 +53,7 @@ function Home() {
               regex(?author, "^${value.input}", "i") ||
               regex(?url, "^${value.input}", "i") ||
               regex(?download, "^${value.input}", "i") ||
+              regex(?category, "^${value.input}", "i") ||
               regex(?language, "^${value.input}", "i") ||
               regex(?framework, "^${value.input}", "i") ||
               regex(?year, "^${value.input}", "i")
