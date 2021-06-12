@@ -338,6 +338,10 @@ section {
 	left: 0;
 }
 
+.button:focus::after {
+	left: 0;
+}
+
 .button a {
 	position: relative;
 	font-size: 14px;
