@@ -59,7 +59,27 @@ Projek ini dibangun dengan menggunakan React JS beserta *library* terkait untuk 
 2. Cari *repository* yang diinginkan pada kolom pencarian biasa (*normal search*) atau pada kolom pencarian *advanced* (*advanced search*)
 ---
 ## Screenshot Website
-<img src="https://github.com/fauzanakmalh1/LibIT_A/blob/master/public/images/screenshot-web.png" alt="Screenshot Website">
-<img src="https://github.com/fauzanakmalh1/LibIT_A/blob/master/public/images/screenshot-mobile.png" alt="Screenshot Website Mobile">
+- *Landing Page*
+<img src="https://github.com/fauzanakmalh1/LibIT_A/blob/master/public/images/screenshot-landing-page.png" alt="Screenshot Landing Page">
+
+- *Advanced Search*
+<img src="https://github.com/fauzanakmalh1/LibIT_A/blob/master/public/images/screenshot-advanced-search.png" alt="Screenshot Advanced Search">
+
+- *Result*
+<img src="https://github.com/fauzanakmalh1/LibIT_A/blob/master/public/images/screenshot-result.png" alt="Screenshot Result">
+
+- *Result (Not Found)*
+<img src="https://github.com/fauzanakmalh1/LibIT_A/blob/master/public/images/screenshot-result-not-found.png" alt="Screenshot Result (Not Found)">
+
+- *About*
+<img src="https://github.com/fauzanakmalh1/LibIT_A/blob/master/public/images/screenshot-about.png" alt="Screenshot About">
+
+- *Landing Page (Mobile Version)*
+<img src="https://github.com/fauzanakmalh1/LibIT_A/blob/master/public/images/screenshot-landing-page-mobile.png" alt="Screenshot Landing Page (Mobile Version)">
+
+- *Result (Mobile Version)*
+<img src="https://github.com/fauzanakmalh1/LibIT_A/blob/master/public/images/screenshot-result-mobile.png" alt="Screenshot Result (Mobile Version)">
+
+---
 
  >Copyright &copy; 2021 - LibIT!
