@@ -1,7 +1,7 @@
 # LibIT_A
 ---
 
-Repository Projek Mata Kuliah Semantik Web : **Aplikasi Pencarian Source code dengan menggunakan SPARQL**
+Repository Projek Mata Kuliah Semantik Web : **Aplikasi Pencarian Source code dengan menggunakan SPARQL**.
 Projek ini dibangun dengan menggunakan React JS beserta *library* terkait untuk menunjang berjalannya fitur *website* ini.
 
 ---
@@ -22,7 +22,7 @@ Projek ini dibangun dengan menggunakan React JS beserta *library* terkait untuk 
 
 ### Mengupload Dataset
 1. Jalankan **fuseki-server**
-2. Buka *browser* dan http://localhost:3030/
+2. Buka *browser* dan jalankan http://localhost:3030/
 3. Klik *manage dataset*, lalu buat *dataset* baru
 4. Masukkan *dataset name* = **repo-codes**
 5. *Create dataset*
